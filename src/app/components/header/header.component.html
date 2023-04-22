@@ -1,0 +1,46 @@
+<header>
+    <div class="main">
+
+        <div>
+            <mat-icon (click) = 'toggleSidebar();' class = "list-mat-icon">list</mat-icon>
+
+            <img src="../../../assets/img/brandlogo1.png" alt="" class="logo">
+        </div>
+
+        <div>
+            <nav>
+                <ul>
+                    <li>
+                        <a routerLink="home">Home</a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="about">About</a>
+                    </li>
+    
+                    <li (click)="toogleDD()">
+                        <a >Packages ▼</a>
+                            <ul class = "custDD">
+                                <li><a routerLink="package/trending">Trending Packages</a></li>
+                                <li><a routerLink="package/international">International Packages</a></li>
+                                <li><a routerLink="package/domestic">Domestic Packages</a></li>
+                            </ul>
+    
+                    </li>
+    
+                    <li>
+                        <a routerLink="contact">Contact Us</a>
+                    </li>
+    
+                    <li>
+                        <a routerLink="blogs">Blogs</a>
+                    </li>
+    
+                    
+                </ul>
+            </nav>
+    
+            <a routerLink="cart"><mat-icon class = "cart-mat-icon">shopping_cart</mat-icon></a>
+        </div>
+    </div>
+</header>

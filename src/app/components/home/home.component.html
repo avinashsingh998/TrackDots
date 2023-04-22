@@ -1,0 +1,56 @@
+<section id="home">
+    <div class="main">
+        <div class="top">
+            <div class="searchbar">
+                <form action="#">
+                    <input 
+                        type="text" 
+                        name="search"
+                        [(ngModel)]="search" 
+                        placeholder="Search Holiday by Destination, Theme"
+                        >
+                    <hr>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <div id="carouselContainer" class="carousel slide customCarousel" data-bs-ride="carousel">
+            <div class="carousel-indicators" *ngFor="let item of carsoulItems; let i = index">
+              <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+
+
+              <ng-container *ngFor="let item of carsoulItems; let i = index">
+                <div class="carousel-item" [ngClass]="{'active': i === 0}">
+                    <img src="../../../assets/img/carsoul{{i+1}}.webp" class="d-block w-100" alt="this is a carousel image ">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5> {{item.title}} </h5>
+                      <p> {{item.description}} </p>
+                    </div>
+                </div>
+    
+              </ng-container>
+
+             
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselContainer" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselContainer" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        
+    </div>
+</section>
+
