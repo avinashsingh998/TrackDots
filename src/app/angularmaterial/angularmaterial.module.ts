@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
+import {MatBadgeModule} from '@angular/material/badge';
 
 
-export const materials = [MatIconModule]
+export const materials = [MatIconModule, MatBadgeModule]
 
 
 @NgModule({

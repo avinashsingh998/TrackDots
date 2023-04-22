@@ -24,8 +24,14 @@ header{
 .cart-mat-icon{
     @include icon;
     color: red;
+    margin-left: 20px;
     display: inline-block;
     filter: drop-shadow(0px 0px 1px rgb(0, 0, 0));
+    transition:color .3s;
+
+    &:hover{
+        color: white;
+    }
 
 }
 
@@ -169,3 +175,4 @@ header{
     }
     
 }
+

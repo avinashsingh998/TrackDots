@@ -51,10 +51,12 @@
 
                 <div>
                     <h4> {{location.name}} </h4>
+                    <p class = "price"> ₹{{location.expences}} </p>
                     <p> {{location.description}} </p>
                     <button class = "btn btn-warning">See the location on map</button>
-                    <button class = "btn btn-success ms-3">Plan a tour</button>
-
+                    <a [routerLink]="['/cart']" [queryParams]="{ id: location.id }">                    
+                        <button class = "btn btn-success ms-3">Plan a tour</button>
+                    </a>
                 </div>
             </div>
         </div>
