@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CartComponent implements OnInit {
 
-  id!:any;
+  id!:any; 
 
   constructor(private route: ActivatedRoute) { }
 
