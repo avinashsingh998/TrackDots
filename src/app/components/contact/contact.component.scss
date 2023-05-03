@@ -6,5 +6,16 @@
     form{
         background-color: rgba(255, 255, 255, 0.712);
         margin: 12px auto;
+
+        label{
+            font-size: 15px;
+            font-weight: bold;
+            color: darkred;
+        }
+
+        .text-danger1{
+            height: 0px;
+            color: red;
+        }
     }
 }

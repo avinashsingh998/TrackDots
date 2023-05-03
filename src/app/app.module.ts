@@ -21,6 +21,13 @@ import { InternationalTripComponent } from './components/international-trip/inte
 
 import{materials} from './angularmaterial/angularmaterial.module';
 import { CartComponent } from './components/cart/cart.component';
+import { FeedbackComponent } from './components/feedback/feedback.component';
+import { AuthGuard } from './gaurds/auth.guard';
+
+import { WeatherIconComponent } from './utilityComponents/weather-icon/weather-icon.component';
+import { WeatherCardComponent } from './utilityComponents/weather-card/weather-card.component';
+import { FarenheitToCelPipe } from './pipes/farenheit-to-cel.pipe';
+import { DateTimeComponent } from './utilityComponents/date-time/date-time.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +40,12 @@ import { CartComponent } from './components/cart/cart.component';
     BlogsComponent,
     InternationalTripComponent,
     CartComponent,
+    FeedbackComponent,
+    WeatherIconComponent,
+    WeatherCardComponent,
+    FarenheitToCelPipe,
+    DateTimeComponent
+
     
   ],
   imports: [
@@ -44,7 +57,7 @@ import { CartComponent } from './components/cart/cart.component';
     ReactiveFormsModule
 
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

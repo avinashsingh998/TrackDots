@@ -12,6 +12,7 @@
 
         .searchbar form{
             @include flexbox();
+            position: relative;
             hr{
                 height: 30px;
                 // width: 20px;
@@ -20,12 +21,65 @@
                 border:1px solid black;
             }
 
+            .autoComplete{
+                position: absolute;
+                top:40px;
+                left:40px;
+                max-height: 170px;
+                height: max-content;
+                z-index: +2;
+                overflow-y: scroll;
+                cursor: pointer;
+                display: none;
+                // opacity: 0;
+                transition: all .2s ease-in-out;
+
+                pointer-events: auto;
+                ul{
+                    list-style: none;
+                    padding-inline-start: 0px;
+                    li{
+                        background-color: rgb(255, 253, 241);
+                        display: block;
+                        line-height: 40px;
+                        padding: 5px;
+                        text-align: center;
+                        border-radius: 3px;
+                        margin-bottom: .5px;
+                        width: 350px;
+                        padding-inline-start: 0px;
+                        color: rgb(52, 52, 89);
+                        transition: all .2s;
+                        letter-spacing: 1px;
+
+                        &:hover{
+                            background-color: white;
+                            box-shadow: 0px 0px 3px gray;
+                        }
+
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    background-color: #9898983e;
+                    width: 7px;
+                  }
+          
+                  &::-webkit-scrollbar-thumb {
+                   background-color: rgb(138, 138, 138);
+                    
+                    border-radius: 4px;
+                   
+                  }
+            }
+
             input{
                 width: 370px;
                 border-radius: 2rem;
                 padding-left: 12px;
                 border:none;
                 height: 37px;
+                z-index: 3;
                 background-color: rgb(236, 233, 233);
                 margin: 20px;
                 
@@ -38,6 +92,9 @@
                 &:focus-visible{
                     outline: none;
                     box-shadow: 0px 0px 1px .5px black;
+                    // &~.autoComplete{
+                    //     display: block;
+                    // }
                 }
             }
 
@@ -88,4 +145,109 @@
             }
         }
     }
+
+
+    &>.third{
+         @include flexbox();
+
+         .card-container{
+            padding: 12px;
+         }
+
+         .card1{
+            position: relative;
+            height: 310px;
+            width: 250px;
+
+            .firstanim{
+                animation: firstanim .8s ease-in-out;
+            }
+             .secondanim{
+                animation: secondanim .8s;
+            }
+             .thirdanim{
+                animation: thirdanim .8s;
+            }
+
+            .firstProp{
+                transform: rotate(-8deg);
+                z-index: -2;
+            }
+            .secondProp{
+                transform: rotateZ(0deg);
+                z-index: 0;
+            }
+            .thirdProp{
+                transform: rotate(8deg);
+                z-index:-1;
+            }
+            
+            
+
+            img{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                padding: 8px;
+                background:-webkit-linear-gradient(-22deg,gray, white, black, gray, white, black, gray, white, black);
+                transform-origin: bottom;
+                transition: all .3s;
+
+                &:first-child{
+                    // transform: rotateZ(8deg);
+                    // z-index: -2;
+
+                }
+                &:nth-child(2){
+                    // transform: rotateZ(-8deg);
+                    // z-index:-1;
+
+                }
+                &:nth-child(3){
+                    // z-index: 0;
+
+                }
+                
+            }
+
+            
+         }
+    }
 }
+
+
+@keyframes firstanim {
+
+    50%{
+        transform: rotateZ(60deg);
+    }
+
+    100%{
+        transform: rotate(-8deg);
+        z-index: -2;
+
+    }
+    
+}
+
+@keyframes secondanim {
+
+    100%{
+        transform: rotateZ(0deg);
+        z-index: 0;
+    }
+    
+}
+
+@keyframes thirdanim {
+
+
+    100%{
+        transform: rotate(8deg);
+        z-index:-1;
+    }
+    
+}
+
+
+

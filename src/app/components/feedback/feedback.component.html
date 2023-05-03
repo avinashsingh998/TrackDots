@@ -1,0 +1,92 @@
+<section id="feedback" class="main">
+
+    <form action="#" #feedbackForm="ngForm" (ngSubmit)="validate(feedbackForm)" role="form"
+        class="form form-vertical col-lg-6 col-md-8 col-sm-10 p-5 my-4 mx-auto border rounded" novalidate>
+
+        <h2 class="text-center">Feedback Form</h2>
+
+        <div class="form-group py-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" placeholder="Enter your name ...." ngModel name="name"
+                #name="ngModel" pattern="^([A-Za-z/ ]{3,30})*$" required>
+
+            <div class="text-danger" *ngIf="name.touched && !name.valid">
+                <ng-container *ngIf="name.errors?.['required']">
+                    This field is required
+                </ng-container>
+                <ng-container *ngIf="name.errors?.['pattern']">
+                    Please enter a correct name
+                </ng-container>
+            </div>
+        </div>
+
+
+        <div class="form-group py-3">
+            <label for="subject">Subject</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                [matAutocomplete]="auto"
+                [formControl]="subjectControl"
+                placeholder="Enter your concern ...." 
+                ngModel name="subject"
+                 required>
+
+                <mat-autocomplete #auto="matAutocomplete">
+                    <mat-option *ngFor="let option of options" [value]="option">
+                      {{option}}
+                    </mat-option>
+                  </mat-autocomplete>
+
+            <div class="text-danger" *ngIf="subject.touched && !subject.valid">
+                <ng-container *ngIf="subject.errors?.['required']">
+                    This field is required
+                </ng-container>
+            </div>
+        </div>
+
+
+        <div class="form-group py-3">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" placeholder="Enter your concern ...." ngModel name="subject"
+                #subject="ngModel" required>
+
+            <div class="text-danger" *ngIf="subject.touched && !subject.valid">
+                <ng-container *ngIf="subject.errors?.['required']">
+                    This field is required
+                </ng-container>
+            </div>
+        </div>
+
+
+        <div class="form-group py-3">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" placeholder="Enter your concern ...." ngModel name="subject"
+                #subject="ngModel" required>
+
+            <div class="text-danger" *ngIf="subject.touched && !subject.valid">
+                <ng-container *ngIf="subject.errors?.['required']">
+                    This field is required
+                </ng-container>
+            </div>
+        </div>
+
+
+        <div class="form-group py-3">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" placeholder="Enter your concern ...." ngModel name="subject"
+                #subject="ngModel" required>
+
+            <div class="text-danger" *ngIf="subject.touched && !subject.valid">
+                <ng-container *ngIf="subject.errors?.['required']">
+                    This field is required
+                </ng-container>
+            </div>
+        </div>
+
+
+        
+
+    </form>
+
+</section>

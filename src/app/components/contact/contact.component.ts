@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup,  Validators } from '@angular/forms';
 import { ContactForm } from 'src/app/models/contact-form';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-contact',
@@ -40,7 +41,8 @@ export class ContactComponent implements OnInit {
       
     )
     this.contactForm.reset();
-    alert("Your responce has been recorded, We will contact within 2 hours");
+    Swal.fire("Done","Your responce has been recorded, We will contact within 2 hours","success")
+
     console.log(this.formObject)
 
 

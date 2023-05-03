@@ -1,0 +1,44 @@
+.main{
+    position: relative;
+    border:1px solid rgb(230, 230, 230);
+    border-radius: 8px;;
+    height: 180px;
+    width: 140px;
+    padding: 12px;
+    margin: 12px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 0px gray;
+    text-align: center;
+    background: -webkit-linear-gradient(-22deg, white, rgb(197, 197, 255), rgba(255, 235, 228, 0.758), rgb(208, 255, 253));
+
+    .text{
+        text-transform: uppercase;
+        font-family: monospace;
+        color: gray;
+        font-size: 13px;
+        letter-spacing: 1.5px;
+    }
+
+    .temp{
+        color: gray;
+        strong{
+            color: red;
+        }
+
+    }
+
+    .index{
+        position: absolute;
+        left:0px;
+        // z-index: +1;
+        top:0px;
+        font-size: 12px;
+        box-shadow: 0px 0px 3px 0px black;
+        font-weight: bold;
+        color: gray;
+        padding: 2px 5px;
+
+    }
+
+    
+}

@@ -10,12 +10,28 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.addEventListener('click', function(event) {
+     
+      if (event.target !== document.getElementById("navbar1") && event.target != document.getElementById("toogleSidebar1")  && event.target != document.getElementById("toogleSidebar2") ) {
+        setTimeout(()=>$("nav").removeClass('open'),50)
+        // console.log("called")
+      }
+
+      if (event.target != document.getElementById("toogleSidebar2") ) {
+        setTimeout(()=>$(".custDD").slideUp(400),50)
+        // console.log("called")
+      }
+
+
+    });
+    
 
     
   }
 
   toggleSidebar(){
     $("nav").toggleClass('open');
+
     
 
   }
@@ -24,6 +40,8 @@ export class HeaderComponent implements OnInit {
     $(".custDD").slideToggle(400);
   }
 
+
+ 
   
   
 }

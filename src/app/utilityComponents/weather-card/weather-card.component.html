@@ -1,0 +1,9 @@
+<div class="main">
+    <span class="index"> {{index+1}} </span>
+    <h4>{{object?.day}}</h4>
+    <weatherIcon [name]="object?.text" color="white"></weatherIcon>
+    <p class = "text">{{object?.text}} </p>
+    <p class="temp">
+        <strong>{{object? (object.low | farenheitToCel ):'--'}}</strong>  - <strong>{{object?(object.high | farenheitToCel):'--'}}</strong><sup>0</sup>C
+    </p>
+</div>

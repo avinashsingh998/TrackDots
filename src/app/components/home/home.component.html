@@ -2,13 +2,22 @@
     <div class="main">
         <div class="top">
             <div class="searchbar">
-                <form action="#">
+                <form (ngSubmit)="searchTour()">
                     <input 
+                    (keyup)="updateOptions()"
                         type="text" 
                         name="search"
                         [(ngModel)]="search" 
+                        autocomplete="off"
                         placeholder="Search Holiday by Destination, Theme"
                         >
+                      
+                        <div class="autoComplete">
+                          <ul>
+                            <li ></li>
+                            <li *ngFor="let option of options; let i = index" value="{{option.id}}" (click)="setValue(i)">{{option.name}}</li>
+                          </ul>
+                        </div>
                     <hr>
                     <button type="submit">Search</button>
                 </form>
@@ -48,6 +57,38 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
+          </div>
+
+
+
+          <div class="third">
+
+            <div class="card-container">
+              <div class="card1 m-5" id = "imageSelector-1" (mouseenter)="flipImages('imageSelector-1',0)">
+                <img src="../../../assets/img/attractions/amerFort.jpg" alt="">
+                <img src="../../../assets/img/attractions/redFort.jpg" alt="">
+                <img src="../../../assets/img/attractions/hawaMahal.jpg" alt="">
+              </div>
+              <h4 class = "text-center">Famous Forts</h4>
+             </div>
+  
+             <div class="card-container">
+              <div class="card1 m-5" id = "imageSelector-2"  (mouseenter)="flipImages('imageSelector-2',1)">
+                <img src="../../../assets/img/attractions/DalLake.jpg" alt="">
+                <img src="../../../assets/img/attractions/machuPicchu.jpg" alt="">
+                <img src="../../../assets/img/attractions/Sundarbans.jpg" alt="">
+              </div>
+              <h4 class = "text-center">Close to Nature</h4>
+             </div>
+  
+             <div class="card-container">
+              <div class="card1 m-5"  id = "imageSelector-3" (mouseenter)="flipImages('imageSelector-3',2)">
+                <img src="../../../assets/img/attractions/eiffleTower.jpg" alt="">
+                <img src="../../../assets/img/attractions/goldentemple.jpg" alt="">
+                <img src="../../../assets/img/attractions/theTaj.jpg" alt="">
+              </div>
+              <h4 class = "text-center">Epic Structures</h4>
+            </div>        
           </div>
 
         

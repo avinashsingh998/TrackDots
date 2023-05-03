@@ -1,298 +1,290 @@
 [
-    {
-      "id":1,
-      "name": "Taj Mahal",
-      "description": "The Taj Mahal is a white marble mausoleum built in the 17th century by Mughal emperor Shah Jahan in memory of his wife, Mumtaz Mahal.",
-      "country": "India",
-      "heritage": true,
-      "image_url": "theTaj.jpg",
-      "expences":"25000 - 40000",
-      "map_link": "https://www.google.com/maps?q=Taj+Mahal,+Agra,+Uttar+Pradesh,+India"
-    },
-    {
-      "id":2,
-      "name": "Great Wall of China",
-      "description": "The Great Wall of China is a series of fortifications built along the northern borders of China to protect against invaders.",
-      "country": "China",
-      "heritage": true,
-      "image_url": "chinaWall.jpg",
-      "expences":"25000 - 40000",
-      "map_link": "https://www.google.com/maps?q=Great+Wall+of+China,+China"
-    },
-    {
-      "id":3,
-      "name": "Statue of Liberty",
-      "description": "The Statue of Liberty is a symbol of freedom and democracy, located on Liberty Island in New York Harbor.",
-      "country": "United States",
-      "heritage": false,
-      "image_url": "statueOfLiberty.jpg",
-      "expences":"25000 - 40000",
-      "map_link": "https://www.google.com/maps?q=Statue+of+Liberty,+New+York,+NY,+United+States"
-    },
-    {
-      "id":4,
-      "name": "Eiffel Tower",
-      "description": "The Eiffel Tower is a wrought iron lattice tower located on the Champ de Mars in Paris, France.",
-      "country": "France",
-      "heritage": false,
-      "image_url": "eiffleTower.jpg",
-      "expences":"25000 - 40000",
-      "map_link": "https://www.google.com/maps?q=Eiffel+Tower,+Paris,+France"
-    },
-    {
-      "id":5,
-      "name": "Red Fort",
-      "description": "The Red Fort is a historic fort in the city of Delhi, India, built in the 17th century by Mughal emperor Shah Jahan.",
-      "country": "India",
-      "heritage": true,
-      "image_url": "redFort.jpg",
-      "expences":"25000 - 40000",
-      "map_link": "https://www.google.com/maps?q=Red+Fort,+New+Delhi,+Delhi,+India"
-    },
-    {
-      "id":6,
-      "name": "Machu Picchu",
-      "description": "Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, known for its stunning architecture and panoramic views.",
-      "country": "Peru",
-      "heritage": true,
-      "image_url": "machuPicchu.jpg",
-      "expences":"25000 - 40000",
-      "map_link": "https://www.google.com/maps?q=Machu+Picchu,+Cusco,+Peru"
-    },
-    {
-      "id":7,
-      "name": "Burj Khalifa",
-      "description": "The Burj Khalifa is the tallest building in the world, located in Dubai, United Arab Emirates.",
-      "country": "United Arab Emirates",
-      "heritage": false,
-      "image_url": "burjKhalifa.jpg",
-      "expences":"25000 - 40000",
-      "map_link": "https://www.google.com/maps?q=Burj+Khalifa,+Dubai,+United+Arab+Emirates"
-    },
-    {
-    "id":8,
-      "name": "Golden Temple",
+  {
+    "id": 1,
+    "name": "Taj Mahal",
+    "description": "The Taj Mahal is a white marble mausoleum built in the 17th century by Mughal emperor Shah Jahan in memory of his wife, Mumtaz Mahal.",
+    "country": "India",
+    "heritage": true,
+    "image_url": "theTaj.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.003200298697!2d78.04215541493147!3d27.175019983115454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39747142c3aaab1b%3A0x6f8ce6b11f7e648c!2sTaj%20Mahal%2C%20Dharmapuri%2C%20Forest%20Colony%2C%20Tajganj%2C%20Agra%2C%20Uttar%20Pradesh%20282002%2C%20India!5e0!3m2!1sen!2sus!4v1557372596364!5m2!1sen!2sus"
+  },
+  {
+    "id": 2,
+    "name": "Great Wall of China",
+    "description": "The Great Wall of China is a series of fortifications built along the northern borders of China to protect against invaders.",
+    "country": "China",
+    "heritage": true,
+    "image_url": "chinaWall.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13666.423731676578!2d116.08177347170533!3d40.43190876437175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f05bf1dacf7d2f%3A0xb867af8a1705df5c!2sThe%20Great%20Wall%20of%20China!5e0!3m2!1sen!2sus!4v1557373086462!5m2!1sen!2sus"
+  },
+  {
+    "id": 3,
+    "name": "Statue of Liberty",
+    "description": "The Statue of Liberty is a symbol of freedom and democracy, located on Liberty Island in New York Harbor.",
+    "country": "United States",
+    "heritage": false,
+    "image_url": "statueOfLiberty.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.648263427969!2d-74.04450278417124!3d40.689249242605825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259284a9f1e69%3A0x8c9f0a43ea0b17f!2sStatue%20of%20Liberty!5e0!3m2!1sen!2sus!4v1650456661637!5m2!1sen!2sus"
+  },
+  {
+    "id": 4,
+    "name": "Eiffel Tower",
+    "description": "The Eiffel Tower is a wrought iron lattice tower located on the Champ de Mars in Paris, France.",
+    "country": "France",
+    "heritage": false,
+    "image_url": "eiffleTower.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.3738346189955!2d2.294481315674291!3d48.85837078322522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x9d19f6c8b6f16e36!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1650456824816!5m2!1sen!2sus"
+  },
+  {
+    "id": 5,
+    "name": "Red Fort",
+    "description": "The Red Fort is a historic fort in the city of Delhi, India, built in the 17th century by Mughal emperor Shah Jahan.",
+    "country": "India",
+    "heritage": true,
+    "image_url": "redFort.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.9811224810253!2d77.24014171497325!3d28.65615948241447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce43201271ef1%3A0x6a97a30bf29faaf2!2sRed%20Fort!5e0!3m2!1sen!2sus!4v1650456897031!5m2!1sen!2sus"
+  },
+  {
+    "id": 6,
+    "name": "Machu Picchu",
+    "description": "Machu Picchu is an Incan citadel set high in the Andes Mountains in Peru, known for its stunning architecture and panoramic views.",
+    "country": "Peru",
+    "heritage": true,
+    "image_url": "machuPicchu.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.1642861723873!2d-72.5453921850541!3d-13.163141997394474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cad5d24d14b5%3A0xeb60ec78439550d9!2sMachu%20Picchu!5e0!3m2!1sen!2sus!4v1650456967029!5m2!1sen!2sus"
+  },
+  {
+    "id": 7,
+    "name": "Burj Khalifa",
+    "description": "The Burj Khalifa is the tallest building in the world, located in Dubai, United Arab Emirates.",
+    "country": "United Arab Emirates",
+    "heritage": false,
+    "image_url": "burjKhalifa.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11519.177179754096!2d55.274631249088635!3d25.19720951890791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f433f51774a47%3A0x6dd2a9a31d46af2f!2sBurj%20Khalifa!5e0!3m2!1sen!2sus!4v1650457121618!5m2!1sen!2sus"
+  },
+  {
+    "id": 8,
+    "name": "Golden Temple",
     "description": "The Golden Temple is a Sikh temple located in the city of Amritsar in Punjab, India, known for its stunning golden architecture and peaceful atmosphere.",
     "country": "India",
     "heritage": false,
     "image_url": "goldentemple.jpg",
-    "expences":"25000 - 40000",
-    "map_link": "https://www.google.com/maps?q=Golden+Temple,+Amritsar,+Punjab,+India"
-    },
-    {
-    "id":9,
-      "name": "Colosseum",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3422.618811438532!2d74.87472141510729!3d31.62085898131974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a83a8b518db49%3A0x814ef083357f86c!2sHarmandir%20Sahib!5e0!3m2!1sen!2sus!4v1650457366969!5m2!1sen!2sus"
+  },
+  {
+    "id": 9,
+    "name": "Colosseum",
     "description": "The Colosseum is an ancient amphitheater located in the center of Rome, Italy, known for its iconic architecture and historic significance.",
     "country": "Italy",
     "heritage": true,
     "image_url": "Colosseum.jpg",
-    "expences":"25000 - 40000",
-    "map_link": "https://www.google.com/maps?q=Colosseum,+Rome,+Italy"
-    },
-    {
-    "id":10,
-      "name": "Petra",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2999.069137937467!2d12.492319315297293!3d41.89021017921815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61f40302713d%3A0x92aee510f323e044!2sColosseum!5e0!3m2!1sen!2sus!4v1650457655862!5m2!1sen!2sus"
+  },
+  {
+    "id": 10,
+    "name": "Petra",
     "description": "Petra is an ancient city located in southern Jordan, known for its stunning rock-cut architecture and historic significance.",
     "country": "Jordan",
     "heritage": true,
     "image_url": "Petra.jpg",
-    "expences":"25000 - 40000",
-    "map_link": "https://www.google.com/maps?q=Petra,+Jordan"
-    },
-    {
-    "id":11,
-      "name": "Angkor Wat",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3417.666013216535!2d35.444377214703746!3d30.32845468179571!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1576e2345a5a5c5d%3A0xd72c1fca558e4ad1!2sPetra!5e0!3m2!1sen!2sus!4v1650457956622!5m2!1sen!2sus"
+  },
+  {
+    "id": 11,
+    "name": "Angkor Wat",
     "description": "Angkor Wat is a temple complex in Cambodia, known for its stunning architecture and historic significance.",
     "country": "Cambodia",
     "heritage": true,
     "image_url": "angkorWat.jpg",
-    "expences":"25000 - 40000",
-    "map_link": "https://www.google.com/maps?q=Angkor+Wat,+Siem+Reap,+Cambodia"
-    },
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101180.08505752602!2d103.8494081774838!3d13.412469931411594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310951171a1b77c5%3A0x6506ed3b3f167227!2sAngkor+Wat!5e0!3m2!1sen!2sus!4v1650458700142!5m2!1sen!2sus"
+  },
 
-    {
-      "id":12,  
-      "name": "Hawa Mahal",
-        "description": "Hawa Mahal is a palace located in the Pink City of Jaipur, Rajasthan. It is known for its intricate latticework and unique architecture that allows for natural air conditioning.",
-        "country": "India",
-        "heritage": false,
-        "image_url": "hawaMahal.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Hawa+Mahal,+Jaipur,+Rajasthan,+India"
-      },
-      {
-        "id":13,
-        "name": "Mysore Palace",
-        "description": "Mysore Palace is a historical palace located in the city of Mysore in the Indian state of Karnataka. It is known for its intricate architecture and stunning lighting during special occasions.",
-        "country": "India",
-        "heritage": false,
-        "image_url": "mysorePalace.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Mysore+Palace,+Mysuru,+Karnataka,+India"
-      },
-      {
-        "id":14,
-        "name": "Sundarbans",
-        "description": "Sundarbans is a mangrove forest located in the delta region of the Ganges, Brahmaputra, and Meghna rivers in Bangladesh and India. It is known for its rich biodiversity, including the Bengal tiger, saltwater crocodile, and various bird species.",
-        "country": "India",
-        "heritage": true,
-        "image_url": "Sundarbans.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Sundarbans,+West+Bengal,+India"
-      },
-      {
-        "id":15,
-        "name": "Kumarakom",
-        "description": "Kumarakom is a popular tourist destination located in the Kottayam district of Kerala, India. It is known for its serene backwaters, scenic beauty, and diverse flora and fauna.",
-        "country": "India",
-        "heritage": false,
-        "image_url": "https://example.com/kumarakom.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Kumarakom,+Kerala,+India"
-      },
-      
-      {
-        "id":16,
-        "name": "Great Barrier Reef",
-        "description": "The Great Barrier Reef is the world's largest coral reef system, located in the Coral Sea off the coast of Australia. It is known for its diverse marine life, including numerous species of fish, turtles, and sharks.",
-        "country": "Australia",
-        "heritage": true,
-        "image_url": "greatBarrierReef.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Great+Barrier+Reef,+Queensland,+Australia"
-      },
-      {
-        "id":17,
-        "name": "Stonehenge",
-        "description": "Stonehenge is a prehistoric monument located in Wiltshire, England. It is made up of standing stones arranged in a circular formation, and is believed to have been constructed between 3000 and 2000 BCE.",
-        "country": "United Kingdom",
-        "heritage": true,
-        "image_url": "Stonehenge.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Stonehenge,+Amesbury,+United+Kingdom"
-        },
-        
-        
-        
-        {
-        "id":18,
-          "name": "Meteora",
-        "description": "Meteora is a rock formation located in central Greece, famous for its monasteries perched on top of towering pillars of rock. The monasteries were built by monks seeking solitude and safety from invading armies, and were largely inaccessible until the 1920s.",
-        "country": "Greece",
-        "heritage": true,
-        "image_url": "Meteora.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Meteora,+Kalabaka,+Greece"
-        },
+  {
+    "id": 12,
+    "name": "Hawa Mahal",
+    "description": "Hawa Mahal is a palace located in the Pink City of Jaipur, Rajasthan. It is known for its intricate latticework and unique architecture that allows for natural air conditioning.",
+    "country": "India",
+    "heritage": false,
+    "image_url": "hawaMahal.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.9821922141685!2d75.82513621458756!3d26.92392498313364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5584a4e0001%3A0x9ad5c4e88323f27a!2sHawa+Mahal!5e0!3m2!1sen!2sin!4v1650491344808!5m2!1sen!2sin"
+  },
+  {
+    "id": 13,
+    "name": "Mysore Palace",
+    "description": "Mysore Palace is a historical palace located in the city of Mysore in the Indian state of Karnataka. It is known for its intricate architecture and stunning lighting during special occasions.",
+    "country": "India",
+    "heritage": false,
+    "image_url": "mysorePalace.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.089338499767!2d76.65129741425513!3d12.305179291307335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7442f42e10d1%3A0x85f4dcfd5c5d3602!2sMysuru%20Palace!5e0!3m2!1sen!2sin!4v1650492014001!5m2!1sen!2sin"
+  },
+  {
+    "id": 14,
+    "name": "Sundarbans",
+    "description": "Sundarbans is a mangrove forest located in the delta region of the Ganges, Brahmaputra, and Meghna rivers in Bangladesh and India. It is known for its rich biodiversity, including the Bengal tiger, saltwater crocodile, and various bird species.",
+    "country": "India",
+    "heritage": true,
+    "image_url": "Sundarbans.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662.055961630974!2d89.2446630142594!3d22.02594158545179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ff3a99d56d7e69%3A0xb7b32d20ef501c7f!2sSundarbans!5e0!3m2!1sen!2sin!4v1650492336849!5m2!1sen!2sin"
+  },
+  {
+    "id": 15,
+    "name": "Kumarakom",
+    "description": "Kumarakom is a popular tourist destination located in the Kottayam district of Kerala, India. It is known for its serene backwaters, scenic beauty, and diverse flora and fauna.",
+    "country": "India",
+    "heritage": false,
+    "image_url": "Kumarakom.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.3579026224737!2d76.4143584143172!3d9.618011393553593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b088a2a013227b3%3A0x98f470c1e60f2479!2sKumarakom%2C%20Kerala%20685001!5e0!3m2!1sen!2sin!4v1650492576408!5m2!1sen!2sin"
+  },
 
-        
-    
-    {
-      "id":19,  
-      "name": "The Pyramids of Giza",
-        "description": "The Pyramids of Giza are a group of three pyramids located in Egypt, near the city of Cairo. They were built as tombs for the pharaohs Khufu, Khafre, and Menkaure, and are among the most recognizable and iconic structures in the world.",
-        "country": "Egypt",
-        "heritage": true,
-        "image_url": "The-Pyramids-Giza.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=The+Pyramids+of+Giza,+Giza,+Egypt"
-    },
-    
+  {
+    "id": 16,
+    "name": "Great Barrier Reef",
+    "description": "The Great Barrier Reef is the world's largest coral reef system, located in the Coral Sea off the coast of Australia. It is known for its diverse marine life, including numerous species of fish, turtles, and sharks.",
+    "country": "Australia",
+    "heritage": true,
+    "image_url": "greatBarrierReef.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11472295.389296502!2d145.08800185303076!3d-18.23877994688076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6bd4b4c38311a269%3A0x301c0d6a3c8bd70!2sGreat%20Barrier%20Reef%2C%20Queensland%2C%20Australia!5e0!3m2!1sen!2sin!4v1650659039978!5m2!1sen!2sin"
+  },
+  {
+    "id": 17,
+    "name": "Stonehenge",
+    "description": "Stonehenge is a prehistoric monument located in Wiltshire, England. It is made up of standing stones arranged in a circular formation, and is believed to have been constructed between 3000 and 2000 BCE.",
+    "country": "United Kingdom",
+    "heritage": true,
+    "image_url": "Stonehenge.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.578172449464!2d-1.8261976840033374!3d51.17884497958036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4873e5f5c5b5e5d5%3A0xdb6c71f6dab31462!2sStonehenge%2C%20Amesbury%20SP4%207DE%2C%20United%20Kingdom!5e0!3m2!1sen!2sin!4v1650526444548!5m2!1sen!2sin"
+  },
 
-    {
-      "id":20,  
-      "name": "The Golden Gate Bridge",
-        "description": "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the strait that connects San Francisco Bay to the Pacific Ocean. It is considered one of the engineering wonders of the world and a symbol of the United States.",
-        "country": "United States",
-        "heritage": false,
-        "image_url": "Golden_Gate_Bridge.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Golden+Gate+Bridge,+San+Francisco,+CA"
-    },
-    
-   
-    {
-      "id":21,  
-      "name": "The Grand Canyon",
-        "description": "The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States. It is over 270 miles long and up to 18 miles wide, and is known for its stunning natural beauty and geological significance.",
-        "country": "United States",
-        "heritage": false,
-        "image_url": "grandcanyonnpyanlismall.jpg",
-        "expences":"25000 - 40000",
-        "map_link": "https://www.google.com/maps?q=Grand+Canyon,+Arizona"
-    },
+  {
+    "id": 18,
+    "name": "Meteora",
+    "description": "Meteora is a rock formation located in central Greece, famous for its monasteries perched on top of towering pillars of rock. The monasteries were built by monks seeking solitude and safety from invading armies, and were largely inaccessible until the 1920s.",
+    "country": "Greece",
+    "heritage": true,
+    "image_url": "Meteora.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12315.527274447952!2d21.614951233536734!3d39.71013350707888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135b36624e6e7777%3A0xf6d2b56d729f1741!2sMeteora%2C%20Kalabaka%2042232%2C%20Greece!5e0!3m2!1sen!2sus!4v1650495418992!5m2!1sen!2sus"
+  },
 
-    {
-      "id":22,  
-      "name": "Meenakshi Amman Temple",
-        "description": "A Hindu temple dedicated to Goddess Parvati and Lord Shiva, known for its intricate architecture and stunning carvings.",
-        "country": "India",
-        "unescoHeritage": false,
-        "imageUrl": "madurai-meenakshi-amman.jpg",
-        "expences":"25000 - 40000",
-        "mapLink": "https://www.google.com/maps?q=Meenakshi+Amman+Temple&hl=en&gl=us&shorturl=1"
-    },
-    {
-      "id":23,  
-      "name": "Amer Fort",
-        "description": "A fort located in Jaipur, Rajasthan, known for its artistic style blending both Hindu and Rajput elements.",
-        "country": "India",
-        "unescoHeritage": false,
-        "imageUrl": "amerFort.jpg",
-        "expences":"25000 - 40000",
-        "mapLink": "https://www.google.com/maps?q=Amer+Fort&hl=en&gl=us&shorturl=1"
-    },
-    {
-      "id":24,  
-      "name": "Dal Lake",
-        "description": "A lake located in Srinagar, Jammu and Kashmir, known for its natural beauty and popular for shikara rides.",
-        "country": "India",
-        "unescoHeritage": false,
-        "imageUrl": "DalLake.jpg",
-        "expences":"25000 - 40000",
-        "mapLink": "https://www.google.com/maps?q=Dal+Lake&hl=en&gl=us&shorturl=1"
-    },
-    
+  {
+    "id": 19,
+    "name": "The Pyramids of Giza",
+    "description": "The Pyramids of Giza are a group of three pyramids located in Egypt, near the city of Cairo. They were built as tombs for the pharaohs Khufu, Khafre, and Menkaure, and are among the most recognizable and iconic structures in the world.",
+    "country": "Egypt",
+    "heritage": true,
+    "image_url": "The-Pyramids-Giza.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3457.663035124385!2d31.13413641498103!3d29.979172281909453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145839f9e066348f%3A0xf132af2d10cb!2sPyramids+of+Giza!5e0!3m2!1sen!2s!4v1650493355063!5m2!1sen!2s"
+  },
 
-    {
-      "id":25,  
-      "name": "Hampi",
-        "description": "An ancient village in Karnataka known for its rich history and stunning architecture, including the Virupaksha Temple and the Elephant Stables.",
-        "country": "India",
-        "unescoHeritage": false,
-        "imageUrl": "Hampi.jpg",
-        "expences":"25000 - 40000",
-        "mapLink": "https://www.google.com/maps?q=Hampi&hl=en&gl=us&shorturl=1"
-      },
-      {
-        "id":26,
-        "name": "Kaziranga National Park",
-        "description": "A national park located in Assam, known for its unique ecosystem and home to the one-horned Indian rhinoceros.",
-        "country": "India",
-        "unescoHeritage": false,
-        "imageUrl": "KazirangaNationalPark.jpg",
-        "expences":"25000 - 40000",
-        "mapLink": "https://www.google.com/maps?q=Kaziranga+National+Park&hl=en&gl=us&shorturl=1"
-      },
-      {
-        "id":27,
-        "name": "Kerala Backwaters",
-        "description": "A network of brackish lagoons and lakes located in the state of Kerala, known for its scenic beauty and popular for houseboat rides.",
-        "country": "India",
-        "unescoHeritage": false,
-        "imageUrl": "KeralaBackwaters.jpg",
-        "expences":"25000 - 40000",
-        "mapLink": "https://www.google.com/maps?q=Kerala+Backwaters&hl=en&gl=us&shorturl=1"
-      },
-      {
-        "id":28,
-        "name": "Thekkady",
-        "description": "A town located in Kerala known for its wildlife sanctuary and popular for elephant rides.",
-        "country": "India",
-        "unescoHeritage": false,
-        "imageUrl": "Thekkady.jpg",
-        "expences":"25000 - 40000",
-        "mapLink": "https://www.google.com/maps?q=Thekkady&hl=en&gl=us&shorturl=1"
-      }
+  {
+    "id": 20,
+    "name": "The Golden Gate Bridge",
+    "description": "The Golden Gate Bridge is a suspension bridge spanning the Golden Gate, the strait that connects San Francisco Bay to the Pacific Ocean. It is considered one of the engineering wonders of the world and a symbol of the United States.",
+    "country": "United States",
+    "heritage": false,
+    "image_url": "Golden_Gate_Bridge.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.858430593958!2d-122.47875218430129!3d37.81992857717465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085807c9b59dfff%3A0x4d4e4f4c4c4f504d!2sGolden%20Gate%20Bridge!5e0!3m2!1sen!2sus!4v1650494368791!5m2!1sen!2sus"
+  },
+
+  {
+    "id": 21,
+    "name": "The Grand Canyon",
+    "description": "The Grand Canyon is a steep-sided canyon carved by the Colorado River in Arizona, United States. It is over 270 miles long and up to 18 miles wide, and is known for its stunning natural beauty and geological significance.",
+    "country": "United States",
+    "heritage": false,
+    "image_url": "grandcanyonnpyanlismall.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d679900.8276954971!2d-113.61499740594596!3d36.10696561051708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b6d3e7a96bafb%3A0x4aef3bb3884de648!2sGrand%20Canyon%2C%20Arizona%2C%20USA!5e0!3m2!1sen!2sin!4v1650492872335!5m2!1sen!2sin"
+  },
+
+  {
+    "id": 22,
+    "name": "Meenakshi Amman Temple",
+    "description": "A Hindu temple dedicated to Goddess Parvati and Lord Shiva, known for its intricate architecture and stunning carvings.",
+    "country": "India",
+    "unescoHeritage": false,
+    "imageUrl": "madurai-meenakshi-amman.jpg",
+    "expences": "25000 - 40000",
+    "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.3452262095584!2d78.13213251431707!3d9.919175392777898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf2b46d6db56f%3A0x3a3c5481f6e5032!2sMeenakshi%20Amman%20Temple!5e0!3m2!1sen!2sin!4v1650510465367!5m2!1sen!2sin"
+  },
+  {
+    "id": 23,
+    "name": "Amer Fort",
+    "description": "A fort located in Jaipur, Rajasthan, known for its artistic style blending both Hindu and Rajput elements.",
+    "country": "India",
+    "unescoHeritage": false,
+    "imageUrl": "amerFort.jpg",
+    "expences": "25000 - 40000",
+    "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.459139337348!2d75.8445199143413!3d26.98488328311453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc16f157b3f7b%3A0x1006b29ebf94fb48!2sAmer%20Fort!5e0!3m2!1sen!2sin!4v1650496421224!5m2!1sen!2sin"
+  },
+  {
+    "id": 24,
+    "name": "Dal Lake",
+    "description": "A lake located in Srinagar, Jammu and Kashmir, known for its natural beauty and popular for shikara rides.",
+    "country": "India",
+    "unescoHeritage": false,
+    "imageUrl": "DalLake.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12981.492751707372!2d74.79574603957766!3d34.08689912217458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38e1988c4f4d4de3%3A0x7b97f8cc69781b91!2sDal%20Lake!5e0!3m2!1sen!2sin!4v1650493324985!5m2!1sen!2sin"
+  },
+
+  {
+    "id": 25,
+    "name": "Hampi",
+    "description": "An ancient village in Karnataka known for its rich history and stunning architecture, including the Virupaksha Temple and the Elephant Stables.",
+    "country": "India",
+    "unescoHeritage": false,
+    "imageUrl": "Hampi.jpg",
+    "expences": "25000 - 40000",
+    "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.661563233773!2d76.46633401431988!3d15.335267589357232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb4787d28e88f5d%3A0xa93f41d2eb320dd2!2sHampi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1650565263104!5m2!1sen!2sin"
+  },
+  {
+    "id": 26,
+    "name": "Kaziranga National Park",
+    "description": "A national park located in Assam, known for its unique ecosystem and home to the one-horned Indian rhinoceros.",
+    "country": "India",
+    "unescoHeritage": false,
+    "imageUrl": "KazirangaNationalPark.jpg",
+    "expences": "25000 - 40000",
+    "map_link": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.977133253232!2d93.36554891493972!3d26.66240148322914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3751f1aaf3c740f3%3A0xd50523eb9e2f360a!2sKaziranga%20National%20Park%2C%20Kanchanjuri%2C%20Assam%20786272%2C%20India!5e0!3m2!1sen!2sus!4v1650493762019!5m2!1sen!2sus"
+  },
+  {
+    "id": 27,
+    "name": "Kerala Backwaters",
+    "description": "A network of brackish lagoons and lakes located in the state of Kerala, known for its scenic beauty and popular for houseboat rides.",
+    "country": "India",
+    "unescoHeritage": false,
+    "imageUrl": "KeralaBackwaters.jpg",
+    "expences": "25000 - 40000",
+    "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.765344445362!2d76.27904261428596!3d9.580678293776464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba656eab8d768e1%3A0x7c198f508cf8f7d9!2sKerala%20Backwaters!5e0!3m2!1sen!2sin!4v1650494049247!5m2!1sen!2sin"
+  },
+  {
+    "id": 28,
+    "name": "Thekkady",
+    "description": "A town located in Kerala known for its wildlife sanctuary and popular for elephant rides.",
+    "country": "India",
+    "unescoHeritage": false,
+    "imageUrl": "Thekkady.jpg",
+    "expences": "25000 - 40000",
+    "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8793640734973!2d77.05929931432473!3d9.60729279234667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0816c5f6ee7a13%3A0x7e6e5dc66be7bca1!2sThekkady%2C%20Kerala%20685801!5e0!3m2!1sen!2sin!4v1650502869979!5m2!1sen!2sin"
+  }
 ]
-  

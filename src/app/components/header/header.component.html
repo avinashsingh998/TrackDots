@@ -2,13 +2,13 @@
     <div class="main">
 
         <div>
-            <mat-icon (click) = 'toggleSidebar();' class = "list-mat-icon">list</mat-icon>
+            <mat-icon (click) = 'toggleSidebar();' class = "list-mat-icon" id = "toogleSidebar1">list</mat-icon>
 
             <img src="../../../assets/img/brandlogo1.png" alt="" class="logo">
         </div>
 
         <div>
-            <nav>
+            <nav id = "navbar1">
                 <ul>
                     <li>
                         <a routerLink="home">Home</a>
@@ -19,8 +19,8 @@
                     </li>
     
                     <li (click)="toogleDD()">
-                        <a >Packages ▼</a>
-                            <ul class = "custDD">
+                        <a  id = "toogleSidebar2">Packages ▼</a>
+                            <ul class = "custDD" id = "custDD1">
                                 <li><a routerLink="package/trending">Trending Packages</a></li>
                                 <li><a routerLink="package/international">International Packages</a></li>
                                 <li><a routerLink="package/domestic">Domestic Packages</a></li>
@@ -31,6 +31,7 @@
                     <li>
                         <a routerLink="contact">Contact Us</a>
                     </li>
+
     
                     <li>
                         <a routerLink="blogs">Blogs</a>
