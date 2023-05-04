@@ -3,9 +3,11 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatBadgeModule} from '@angular/material/badge';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import {MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
-export const materials = [MatIconModule, MatBadgeModule, MatExpansionModule,MatAutocompleteModule]
+const materials = [MatIconModule, MatBadgeModule, MatExpansionModule,MatAutocompleteModule, MatInputModule, MatFormFieldModule]
 
 
 @NgModule({

@@ -15,7 +15,7 @@
                 placeholder="Enter your name here"
                 >
     
-            <div *ngIf="contactForm.controls?.['name']?.errors && contactForm.controls?.['name']?.touched" class="text-danger1">
+            <div *ngIf="contactForm.controls?.['uname']?.errors && contactForm.controls?.['uname']?.touched" class="text-danger1">
               <ng-container *ngIf="contactForm.controls?.['name']?.errors?.['required']">
                 Name Field is required
               </ng-container>

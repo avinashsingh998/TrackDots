@@ -19,7 +19,7 @@ import { InternationalTripComponent } from './components/international-trip/inte
 
 
 
-import{materials} from './angularmaterial/angularmaterial.module';
+import{AngularmaterialModule} from './angularmaterial/angularmaterial.module';
 import { CartComponent } from './components/cart/cart.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { AuthGuard } from './gaurds/auth.guard';
@@ -28,6 +28,7 @@ import { WeatherIconComponent } from './utilityComponents/weather-icon/weather-i
 import { WeatherCardComponent } from './utilityComponents/weather-card/weather-card.component';
 import { FarenheitToCelPipe } from './pipes/farenheit-to-cel.pipe';
 import { DateTimeComponent } from './utilityComponents/date-time/date-time.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -51,10 +52,12 @@ import { DateTimeComponent } from './utilityComponents/date-time/date-time.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    materials,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    AngularmaterialModule
+    
 
   ],
   providers: [AuthGuard],

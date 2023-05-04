@@ -1,0 +1,113 @@
+.main{
+    margin: 0px auto;
+    align-items: center;
+    background-image: url(../../../assets/img/bg-dark.webp);
+    background-attachment: fixed;
+    background-color: rgba(208, 208, 208, 0.555);
+    background-blend-mode: color;
+    background-size: cover;
+    // color: blue;
+    // text-align: center;
+    form{
+        margin: 0px auto;
+        box-shadow: 0px 0px 12px 2px rgba(0, 0, 0, 0.697);
+        background-color: rgba(255, 255, 255, 0.536);
+        padding: 20px;
+        width: max-content;
+        max-width: 96%;
+        color: rgb(0, 0, 0);
+        border-radius: 2rem;
+
+        h4{
+            text-shadow: 0px 0px 2px black;
+        }
+
+        .fg{
+
+            height: 90px;
+            position: relative;
+            margin: 12px 30px;
+            padding: 20px 0px;
+
+
+            label{
+                top:45%;
+                left:10px;
+                position: absolute;
+                transition: all .2s;
+                pointer-events: none;
+
+                sup{
+                    color: red;
+                }
+            }
+
+            input{
+                width: 320px;
+                max-width: 99%;
+                background-color: rgba(255, 255, 255, 0.599);
+                border-bottom: 2px solid black;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                height: 60px;
+                max-height: 14vw;
+                padding: 2px auto;
+
+                &::placeholder{
+                    opacity: 0;
+                }
+
+                &:focus-visible{
+                    outline: none;
+
+                    &::placeholder{
+                        opacity: 1;
+                    }
+
+                }
+            }
+
+            .warn{
+                position: absolute;
+                top:80px;
+                transition: all .2s;
+                font-size: 14px;
+                color: red;
+            }
+        }
+
+        .fg3{
+            button{
+                padding: 5px;
+                height: 33px;
+                width: 90px;
+                border:none;
+                color: white;
+                background-color: rgb(221, 32, 32);
+                border-radius: 5px;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: bold;
+                transition: all .1s;
+                cursor: pointer;
+
+                &:disabled{
+                    background-color: rgb(125, 0, 0);
+                    cursor: not-allowed;
+                }
+
+                &:hover{
+                    color: red;
+                    background-color: whitesmoke;
+                    box-shadow: 0px 0px 7px black;
+                }
+
+
+            }
+        }
+    }
+
+    
+      
+}

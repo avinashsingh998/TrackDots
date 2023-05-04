@@ -1,6 +1,8 @@
 $transpaprent: #ffffff00;
 
 .main {
+
+  overflow-x: hidden;
   .custContainer {
     display: flex;
     flex-wrap: wrap;

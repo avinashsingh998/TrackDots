@@ -149,6 +149,11 @@
 
     &>.third{
          @include flexbox();
+         overflow: hidden;
+        //  background-image: url(../../../assets/img/bg-light-texture.jpg);
+        //  position: relative;
+        //  z-index: -3;
+
 
          .card-container{
             padding: 12px;
