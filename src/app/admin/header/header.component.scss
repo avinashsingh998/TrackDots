@@ -1,0 +1,51 @@
+@mixin flexbox1{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+
+header{
+
+    .container1{
+
+
+        .logoCont{
+            height: 50px;
+            .logo{
+                height: 70px;
+            }
+        }
+        
+        .flexbox{
+            @include flexbox1();
+
+            a{
+                text-align: center;
+                font-size: 14px;
+                color: gray;
+                mat-icon{
+                    display: block;
+                    margin: auto;
+                    color: rgb(255, 90, 90);
+                    transition: all .1s;
+
+                   
+                }
+
+                &:hover{
+                    color: white;
+                    transform: scale(1.02);
+                    mat-icon{
+
+                        color: white;
+                    }
+                }
+            }
+        }
+
+    }
+}
+

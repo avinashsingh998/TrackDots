@@ -14,12 +14,11 @@ import { HomeComponent } from './components/home/home.component';
 import { InternationalTripComponent } from './components/international-trip/international-trip.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularmaterialModule } from '../angularmaterial/angularmaterial.module';
 import { FarenheitToCelPipe } from '../pipes/farenheit-to-cel.pipe';
 import { WeatherCardComponent } from '../utilityComponents/weather-card/weather-card.component';
 import { WeatherIconComponent } from '../utilityComponents/weather-icon/weather-icon.component';
+// import { AgmCoreModule } from '@agm/core';
 
 
 @NgModule({
@@ -37,8 +36,9 @@ import { WeatherIconComponent } from '../utilityComponents/weather-icon/weather-
     WeatherIconComponent,
     WeatherCardComponent,
     FarenheitToCelPipe,
-   
   ],
+
+
   imports: [
     CommonModule,
     UserRoutingModule,
@@ -46,6 +46,12 @@ import { WeatherIconComponent } from '../utilityComponents/weather-icon/weather-
     HttpClientModule,
     ReactiveFormsModule,
     AngularmaterialModule,
+
+    // AgmCoreModule.forRoot({
+    //   apiKey:'AIzaSyAtE4OhIewaMyKniFlldVmHsJZPZjyhrFA'
+    // })
   ]
+
+  
 })
 export class UserModule { }

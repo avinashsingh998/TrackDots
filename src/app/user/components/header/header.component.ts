@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from 'src/app/services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  itemCount!:number;
+
+  constructor(private _cartService : CartService) { }
+
+  hidden = false;
+
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
 
   ngOnInit(): void {
+
+    this._cartService.getBookingCount().subscribe((data)=>{
+      this.itemCount = data;
+      // console.log("this is the data "+ data)
+    })
+
+    this._cartService.updateValue();
+
+
     document.addEventListener('click', function(event) {
      
       if (event.target !== document.getElementById("navbar1") && event.target != document.getElementById("toogleSidebar1")  && event.target != document.getElementById("toogleSidebar2") ) {

@@ -11,35 +11,46 @@ import { FeedbackComponent } from './components/feedback/feedback.component';
 import { InternationalTripComponent } from './components/international-trip/international-trip.component';
 
 const routes: Routes = [
-  { path: '', component: UserComponent,
-  children:[
-    {path:'', component:HomeComponent},
-  {path:'home', component:HomeComponent},
-  {path:'about', component:AboutComponent},
-  {path:'contact', component:ContactComponent},
-  {path:'blogs', component:BlogsComponent},
-  {path:'cart', component:CartComponent, canActivate:[AuthGuard], data: {
-    scrollPositionRestoration: 'enabled'
-  }},
-  {path:'feedback', component:FeedbackComponent,data: {
-    scrollPositionRestoration: 'enabled'
-  }},
-  
-  {path:'package', 
-    children:[
+  {
+    path: '',
+    component: UserComponent,
+    children: [
+      { path: '', component: HomeComponent },
+      { path: 'home', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'blogs', component: BlogsComponent },
       {
-        path:"international", component:InternationalTripComponent
-      }
-    ]
-  },
-  ]
-},
-  
+        path: 'cart',
+        component: CartComponent,
+        canActivate: [AuthGuard],
+        data: {
+          scrollPositionRestoration: 'enabled',
+        },
+      },
+      {
+        path: 'feedback',
+        component: FeedbackComponent,
+        data: {
+          scrollPositionRestoration: 'enabled',
+        },
+      },
 
+      {
+        path: 'package',
+        children: [
+          {
+            path: 'international',
+            component: InternationalTripComponent,
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class UserRoutingModule { }
+export class UserRoutingModule {}

@@ -4,7 +4,7 @@
         <div>
             <mat-icon (click) = 'toggleSidebar();' class = "list-mat-icon" id = "toogleSidebar1">list</mat-icon>
 
-            <img src="../../../assets/img/brandlogo1.png" alt="" class="logo">
+            <img src="../../../assets/img/brandlogo1.png" routerLink="/" alt="" class="logo">
         </div>
 
         <div>
@@ -41,7 +41,10 @@
                 </ul>
             </nav>
     
-            <a routerLink="cart"><mat-icon class = "cart-mat-icon">shopping_cart</mat-icon></a>
+            <a routerLink="cart" class = "cart">
+                <mat-icon class = "cart-mat-icon">shopping_cart</mat-icon>
+                <span>{{itemCount}}</span>
+            </a>
         </div>
     </div>
 </header>

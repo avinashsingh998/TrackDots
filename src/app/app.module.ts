@@ -15,16 +15,15 @@ import { AppComponent } from './app.component';
 import{AngularmaterialModule} from './angularmaterial/angularmaterial.module';
 import { AuthGuard } from './gaurds/auth.guard';
 
-import { WeatherIconComponent } from './utilityComponents/weather-icon/weather-icon.component';
-import { WeatherCardComponent } from './utilityComponents/weather-card/weather-card.component';
-import { FarenheitToCelPipe } from './pipes/farenheit-to-cel.pipe';
 import { DateTimeComponent } from './utilityComponents/date-time/date-time.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TestDirectiveDirective } from './directives/test-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DateTimeComponent 
+    DateTimeComponent,
+    TestDirectiveDirective
 
     
   ],

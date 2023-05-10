@@ -1,1 +1,64 @@
-<p>header works!</p>
+<header class="p-3 bg-dark text-white">
+    <div class="container1">
+      <div class="flexbox">
+        <a routerLink = '/' class="d-flex align-items-center mb-2 mb-lg-0 logoCont">
+            <img src="assets/img/brandLogo.png" alt="logo" class = "logo">
+        </a>
+
+        <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+            <li>
+              <a routerLink = '/admin' class="nav-link ">
+                <mat-icon>account_box</mat-icon>
+                Home
+              </a>
+            </li>
+            <li>
+              <a routerLink = '/admin/dashboard' class="nav-link  ">
+                <mat-icon>dashboard</mat-icon>                
+                Dashboard
+              </a>
+            </li>
+            <li>
+              <a routerLink = '/admin/orders' class="nav-link ">
+                <mat-icon>shopping_basket</mat-icon>                
+                Orders
+              </a>
+            </li>
+            <li>
+              <a routerLink = '/admin/products' class="nav-link ">
+                <mat-icon>view_module</mat-icon>                
+                Products
+              </a>
+            </li>
+            <li>
+              <a routerLink = '/admin/customers' class="nav-link ">
+                <mat-icon>group</mat-icon>                
+                Customers
+              </a>
+            </li>
+          </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="text-end"  *ngIf="!user">
+          <button type="button" class="btn btn-outline-light me-2">Login</button>
+          <button type="button" class="btn btn-warning">Sign-up</button>
+        </div>
+
+        <div class="dropdown text-end" *ngIf="user">
+            <a routerLink = '/admin' class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1" >
+              <li><a class="dropdown-item" routerLink = '/admin'>New project...</a></li>
+              <li><a class="dropdown-item" routerLink = '/admin'>Settings</a></li>
+              <li><a class="dropdown-item" routerLink = '/admin'>Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" routerLink = '/admin'>Sign out</a></li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </header>

@@ -6,6 +6,7 @@ import { NgForm } from '@angular/forms';
 import { CartService } from 'src/app/services/cart.service';
 import { WeatherService } from 'src/app/services/weather.service';
 import Swal from 'sweetalert2';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-cart',
@@ -42,9 +43,9 @@ export class CartComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    setTimeout(() => {
-      console.log(this.weatherInfo)
-    }, 9000);
+    // setTimeout(() => {
+    //   console.log(this.weatherInfo)
+    // }, 9000);
 
     this.bookings = this._cartService.bookings;
     this.route.queryParamMap.subscribe((params) => {
@@ -116,7 +117,7 @@ export class CartComponent implements OnInit {
       cancelButtonText: 'No, keep it'
     }).then((result) => {
       if (result.isConfirmed) {
-        this._cartService.bookings.splice(ind,1);
+        this._cartService.removeItem(ind);
         Swal.fire({
         title: 'Deleted!',
         text: 'Your item has been deleted.',
@@ -141,27 +142,24 @@ export class CartComponent implements OnInit {
       Swal.fire("Alert!","Select a date....","warning")
     }
     else{
-      this._cartService.bookings.push(
-        {
-          "price":{
-          "food":this.foodPrice,
-          "basic":25000,
-          "other":this.explorePrice,
-          "gst":this.totalPrice*.24,
-          "othertax":this.totalPrice*.03,
-          },
-          "pricetotal":(this.maleCount+this.femaleCount)*(this.totalPrice)*1.27,
+      this._cartService.addItem({
+        "price":{
+        "food":this.foodPrice,
+        "basic":25000,
+        "other":this.explorePrice,
+        "gst":this.totalPrice*.24,
+        "othertax":this.totalPrice*.03,
+        },
+        "pricetotal":(this.maleCount+this.femaleCount)*(this.totalPrice)*1.27,
 
-          "package":this.object,
-          "date":myTourForm.value.date,
-          "maleCount":this.maleCount,
-          "femaleCount":this.femaleCount
-
-
-        }
+        "package":this.object,
+        "date":myTourForm.value.date,
+        "maleCount":this.maleCount,
+        "femaleCount":this.femaleCount
 
 
-      )
+      })
+      
         this.id = undefined;
         this.object = undefined;
         Swal.fire("Added","One Package added to the cart","success")
@@ -174,5 +172,7 @@ export class CartComponent implements OnInit {
     this.object = undefined;
   }
 
+
+  
   
 }

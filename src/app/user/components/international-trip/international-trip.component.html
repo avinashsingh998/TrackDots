@@ -53,7 +53,6 @@
                     <h4> {{location.name}} </h4>
                     <p class = "price"> ₹{{location.expences}} </p>
                     <p> {{location.description}} </p>
-                    <button class = "btn btn-warning">See the location on map</button>
                     <a [routerLink]="['/cart']" [queryParams]="{ id: location.id }">                    
                         <button class = "btn btn-success m-3">Plan a tour</button>
                     </a>

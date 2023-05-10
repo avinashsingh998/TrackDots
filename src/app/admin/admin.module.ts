@@ -8,12 +8,24 @@ import { AngularmaterialModule } from '../angularmaterial/angularmaterial.module
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
+import { CustomersComponent } from './customers/customers.component';
+import { ProductsComponent } from './products/products.component';
+import { OrdersComponent } from './orders/orders.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfileComponent } from './profile/profile.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AdminComponent,
     LoginComponent,
-    HeaderComponent
+    HeaderComponent,
+    CustomersComponent,
+    ProductsComponent,
+    OrdersComponent,
+    DashboardComponent,
+    ProfileComponent,
+    FooterComponent,
   ],
   imports: [
     CommonModule,
