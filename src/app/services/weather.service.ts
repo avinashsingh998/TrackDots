@@ -1,8 +1,4 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-// import fetch from 'node-fetch';
-// import * as https from 'https';
-
 
 
 @Injectable({
@@ -12,7 +8,7 @@ export class WeatherService {
 
   weatherAPI:string = "https://weatherbit-v1-mashape.p.rapidapi.com/forecast/daily";
 
-  constructor(private http:HttpClient) { }
+  constructor() { }
 
 
   async getWeatherInfo(lat1:string, lon1:string){

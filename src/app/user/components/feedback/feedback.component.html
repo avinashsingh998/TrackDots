@@ -1,0 +1,84 @@
+<section id="feedback" class="main">
+
+    <form action="#" #feedbackForm="ngForm" (ngSubmit)="validate(feedbackForm)" role="form"
+        class="form form-vertical col-lg-6 col-md-8 col-sm-10 px-5 my-4 mx-auto border rounded" novalidate>
+
+        <h2 class="text-center mt-5">Feedback Form</h2>
+
+        <div class="form-group py-3">
+            <label for="name">Name</label>
+            <input 
+                type="text" 
+                class="form-control" 
+                placeholder="Enter your name ...." 
+                [(ngModel)]='formFields.name'
+                name="name" 
+                #name="ngModel" 
+                pattern="^([A-Za-z/ ]{3,30})*$" 
+                required
+                >
+
+            <div class="text-danger" *ngIf="name.touched && !name.valid">
+                <ng-container *ngIf="name.errors?.['required']">
+                    This field is required
+                </ng-container>
+                <ng-container *ngIf="name.errors?.['pattern']">
+                    Please enter a correct name
+                </ng-container>
+            </div>
+        </div>
+
+
+        <div class="form-group py-3">
+            <label for="subject">Subject</label>
+            <select 
+                type="text" 
+                class="form-control" 
+                [(ngModel)] = 'formFields.subject' 
+                name="subject" 
+                required 
+                #subject="ngModel"
+                >
+                <option value="" selected disabled>Choose a field</option>
+                <option *ngFor="let topic of feedbackTopics" value="{{topic.value}}">{{topic.label}}</option>
+            </select>
+
+            <div class="text-danger" *ngIf="subject.touched && !subject.valid">
+                <ng-container *ngIf="subject.errors?.['required']">
+                    Choose a topic for feedback
+                </ng-container>
+            </div>
+        </div>
+
+
+        <div class="form-group py-3 desc">
+            <label for="subject">Description</label>
+            <textarea 
+                type="text" 
+                class="form-control" 
+                placeholder="Enter detailed feedback ...." 
+                [(ngModel)]="formFields.description"
+                name="description" 
+                #description="ngModel" 
+                required>
+            </textarea>
+
+            <div class="text-danger" *ngIf="description.touched && !description.valid">
+                <ng-container *ngIf="description.errors?.['required']">
+                    Description is required
+                </ng-container>
+            </div>
+        </div>
+
+
+
+
+        <button class="btn btn-success p-2 m-5">Submit</button>
+
+
+
+
+
+    </form>
+
+</section>

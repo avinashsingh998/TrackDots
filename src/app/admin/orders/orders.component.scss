@@ -1,0 +1,165 @@
+.main{
+
+    @mixin flexbox{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+    border:1px solid rgb(189, 189, 189);
+    background-color: rgb(242, 252, 255);
+
+    .top{
+        @include flexbox();
+        padding: 20px;
+        background-color: rgb(255, 248, 249);
+        align-items: center;
+
+        .left{
+            // h3{
+
+            // }
+            p{
+                color: gray;
+            }
+        }
+
+        // .right{
+           
+        // }
+
+
+    }
+
+    .filters{
+        @include flexbox();
+        justify-content: space-evenly;
+        border:4px outset silver;
+        padding: 8px;
+
+        .form-group{
+            @include flexbox();
+            justify-content: center;
+            padding: 8px;
+            label{
+                font-family: cursive;
+                padding: 5px;
+                color: rgb(238, 46, 46);
+
+            }
+            .form-control{
+                width: 180px;
+            }
+        }
+    }
+
+    .orders{
+        display: grid;
+        overflow-x: scroll;
+        grid-template-columns: auto auto auto auto auto auto;
+        margin:12px;
+        border: 1px solid rgb(202, 202, 202);
+        background-color: rgb(208, 224, 220);
+
+        .customerName{
+            font-weight: bold;
+            font-size: 14px;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
+        }
+
+        .date{
+            font-style: italic;
+            color: gray;
+        }
+
+        .remark{
+            input{
+                border:none;
+                background-color: rgba(0, 128, 0, 0);
+                border-radius: 12px 3px;
+                padding: 3px 12px;
+                box-shadow: 0px 0px 5px 0px rgb(192, 192, 192);
+
+                &:focus-visible{
+                    outline: none;
+                    background-color: rgb(130, 130, 130);
+                    color: white;
+                }
+            }
+        }
+
+        
+
+        .odd{
+            background-color: white;
+            color: rgb(79, 21, 0);
+        }
+        .selectStatus{
+           select{
+            border:none;
+            background-color: transparent;
+            cursor: pointer;
+
+            &:focus-visible{
+                outline: none;
+                
+            }
+           }
+
+        }
+
+        p{
+            padding: 12px;
+            margin: 0px;
+
+          
+        }
+        @mixin statusMarker{
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            border-radius: .5px solid black;
+            margin-right: 7px;
+        }
+        @mixin flexbox1{
+            @include flexbox();
+            justify-content: start;
+            align-items: center;
+            
+        }
+
+        .initiated{
+            @include flexbox1();
+            span{
+               @include statusMarker();
+               background:radial-gradient(rgb(118, 118, 255), blue, blue, gray)
+            }
+        }
+        .pending{
+            @include flexbox1();
+            span{
+               @include statusMarker();
+               background:radial-gradient(rgb(255, 185, 150), orange, rgb(255, 89, 0),rgb(0, 0, 0), gray)
+
+            }
+        }
+        .completed{
+            @include flexbox1();
+            span{
+               @include statusMarker();
+               background:radial-gradient(rgb(128, 255, 137), rgb(0, 255, 0), green,rgb(38, 255, 38), gray)
+
+            }
+        }
+
+        strong{
+                padding: 12px;
+                background-color: black;
+                color: white;           
+            }
+        
+
+    }
+    
+}

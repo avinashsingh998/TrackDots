@@ -1,0 +1,64 @@
+<section id="international-trip" class="main">
+    <h1>International Tour</h1>
+
+    <hr>
+
+    <div class="cust-container">
+        <div class="left">
+            <h2>Explore the world with Trackdots: your passport to unforgettable experiences</h2>
+            <p>"At Trackdots, we believe that travel is about more than just ticking off a list of destinations. It's about immersing yourself in new cultures, trying new foods, meeting new people, and creating memories that will last a lifetime. That's why we've curated a collection of the world's most exciting and inspiring travel experiences, from the bustling streets of Tokyo to the tranquil beaches of Bali. With our expert guidance and support, you can explore the world with confidence and discover new adventures at every turn. So why wait? Join us today and let your journey begin!"</p>
+        </div>
+        <div class="right">
+            <div class="cards1">
+                <div class="hanger"></div>
+
+                <img src="assets/img/japan-img1.jpg" alt="">
+                <h3>Japan</h3>
+            </div>
+
+            <div class="cards1 cards2">
+                <div class="hanger"></div>
+                <img src="assets/img/singapore-img1.jpg" alt="">
+                <h3>Singapore</h3>
+            </div>
+
+            <div class="cards1">
+                <div class="hanger"></div>
+
+                <img src="assets/img/dubai-img1.jpg" alt="">
+                <h3>Dubai</h3>
+            </div>
+
+            <div class="cards1 cards2">
+                <div class="hanger"></div>
+
+                <img src="assets/img/greenland-img1.webp" alt="">
+                <h3>Greenland</h3>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="trips">
+
+        <h2 class = "text-center bg-light p-3 m-2 mt-5">Our Top Tourist spots </h2>
+       <ng-container  *ngFor="let location of data; let i = index">
+        <div  [ngClass]="i % 2 === 0 ? 'card1' : 'card2'">
+            <div  class = "customContainer" >
+                <img src="assets/img/attractions/{{location.image_url}}"  alt="image" >
+
+                <div>
+                    <h4> {{location.name}} </h4>
+                    <p class = "price"> ₹{{location.expences}} </p>
+                    <p> {{location.description}} </p>
+                    <a [routerLink]="['/cart']" [queryParams]="{ id: location._id }">                    
+                        <button class = "btn btn-success m-3">Plan a tour</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+       </ng-container>
+    </div>
+</section>

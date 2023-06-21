@@ -1,0 +1,22 @@
+.main{
+    background-image: url(../../../../assets/img/lightred.jpg);
+    background-size: cover;
+    padding: 20px;
+
+    form{
+        background-color: rgba(255, 255, 255, 0.712);
+        margin: 12px auto;
+
+        label{
+            font-size: 15px;
+            font-weight: bold;
+            color: darkred;
+        }
+
+        .text-danger1{
+            height: 0px;
+            color: red;
+            font-size: 12px;
+        }
+    }
+}

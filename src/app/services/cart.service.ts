@@ -1,11 +1,27 @@
 import { Injectable } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartService {
+  addItem(arg0: { price: { food: number; basic: number; other: number; gst: number; othertax: number; }; pricetotal: number; package: any; date: any; maleCount: number; femaleCount: number; }) {
+    this.bookings.push(arg0);
+    this.cartLengthSubject.next(this.bookings.length)
+  }
+  removeItem(ind: any) {
+    this.bookings.splice(ind, 1);
+    this.cartLengthSubject.next(this.bookings.length)
 
-  bookings: any = [
+  }
+
+  private cartLengthSubject = new Subject<number>();
+  
+  getBookingCount():Observable<number> {
+   return this.cartLengthSubject.asObservable();
+  }
+
+  bookings: any[] = [
     {
       price: {
         food: 3000,
@@ -63,5 +79,8 @@ export class CartService {
     },
   ];
 
-  constructor() { }
+ updateValue() {
+      this.cartLengthSubject.next(this.bookings.length)
+   }
+  
 }

@@ -1,0 +1,262 @@
+@mixin flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    align-items: center;
+}
+
+.main{
+    &>.top{
+        @include flexbox();
+
+        .searchbar form{
+            @include flexbox();
+            position: relative;
+            hr{
+                height: 30px;
+                // width: 20px;
+                color: black;
+                margin: auto 12px;
+                border:1px solid black;
+            }
+
+            .autoComplete1{
+                position: absolute;
+                top:40px;
+                left:30px;
+                max-height: 170px;
+                height: max-content;
+                z-index: +2;
+                overflow-y: scroll;
+                cursor: pointer;
+                display: none;
+                // opacity: 0;
+                transition: all .2s ease-in-out;
+
+                pointer-events: auto;
+                ul{
+                    list-style: none;
+                    padding-inline-start: 0px;
+                    li{
+                        background:-webkit-linear-gradient(-80deg, white, rgb(198, 198, 198));
+                        display: block;
+                        border-bottom: 1px solid gray;
+                        line-height: 35px;
+                        padding: 5px;
+                        text-align: center;
+                        border-radius: 3px;
+                        margin-bottom: .5px;
+                        width: 350px;
+                        padding-inline-start: 0px;
+                        color: rgb(52, 52, 89);
+                        font-weight: bold;
+                        font-size: 13px;
+                        letter-spacing: 1px;
+                        color: darkred;
+
+                        &:hover{
+                            background: white;
+                            box-shadow: 0px 0px 3px gray;
+                            color: red;
+                        }
+
+                    }
+                }
+
+                &::-webkit-scrollbar {
+                    background-color: #9898983e;
+                    width: 7px;
+                  }
+          
+                  &::-webkit-scrollbar-thumb {
+                   background-color: rgb(138, 138, 138);
+                    
+                    border-radius: 4px;
+                   
+                  }
+            }
+
+            input{
+                width: 370px;
+                border-radius: 2rem;
+                padding-left: 12px;
+                border:none;
+                height: 37px;
+                z-index: 3;
+                background-color: rgb(236, 233, 233);
+                margin: 20px;
+                
+                transition: all .1s;
+
+                &:hover{
+                    background-color: white;
+                    box-shadow: 0px 0px 7px -1px rgb(128, 128, 128);
+                }
+                &:focus-visible{
+                    outline: none;
+                    box-shadow: 0px 0px 1px .5px black;
+                    // &~.autoComplete{
+                    //     display: block;
+                    // }
+                }
+            }
+
+            button{
+                color: white;
+                background-color: red;
+                text-transform: uppercase;
+                font-weight: bold;
+                padding: 1px 8px;
+                border-radius: .5rem;
+                height: 37px;
+                border: none;
+                transition: all .1s;
+
+                &:hover{
+                    color: red;
+                    background-color: whitesmoke;
+                    box-shadow: 0px 0px 1px 1px black;
+                }
+                
+            }
+        }
+    }
+
+    .customCarousel{
+        margin: 20px;
+        overflow: hidden;
+        border: 5px solid gray;
+        border-radius: 17px;
+
+    }
+
+
+
+    .carousel-item {
+
+        img{
+            max-height: 500px;
+        }
+
+        &>div{
+            background-color: rgba(0, 0, 0, 0.689);
+            box-shadow: 0px 0px 8px 3px rgb(0, 0, 0);
+            border:none;
+
+            h5{
+                font-size: 33px;
+            }
+        }
+    }
+
+
+    &>.third{
+         @include flexbox();
+         overflow: hidden;
+        //  background-image: url(../../../../assets/img/bg-light-texture.jpg);
+        //  position: relative;
+        //  z-index: -3;
+
+
+         .card-container{
+            padding: 12px;
+         }
+
+         .card1{
+            position: relative;
+            height: 310px;
+            width: 250px;
+
+            .firstanim{
+                animation: firstanim .8s ease-in-out;
+            }
+             .secondanim{
+                animation: secondanim .8s;
+            }
+             .thirdanim{
+                animation: thirdanim .8s;
+            }
+
+            .firstProp{
+                transform: rotate(-8deg);
+                z-index: -2;
+            }
+            .secondProp{
+                transform: rotateZ(0deg);
+                z-index: 0;
+            }
+            .thirdProp{
+                transform: rotate(8deg);
+                z-index:-1;
+            }
+            
+            
+
+            img{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                padding: 8px;
+                background:-webkit-linear-gradient(-22deg,gray, white, black, gray, white, black, gray, white, black);
+                transform-origin: bottom;
+                transition: all .3s;
+
+                &:first-child{
+                    // transform: rotateZ(8deg);
+                    // z-index: -2;
+
+                }
+                &:nth-child(2){
+                    // transform: rotateZ(-8deg);
+                    // z-index:-1;
+
+                }
+                &:nth-child(3){
+                    // z-index: 0;
+
+                }
+                
+            }
+
+            
+         }
+    }
+}
+
+
+@keyframes firstanim {
+
+    50%{
+        transform: rotateZ(60deg);
+    }
+
+    100%{
+        transform: rotate(-8deg);
+        z-index: -2;
+
+    }
+    
+}
+
+@keyframes secondanim {
+
+    100%{
+        transform: rotateZ(0deg);
+        z-index: 0;
+    }
+    
+}
+
+@keyframes thirdanim {
+
+
+    100%{
+        transform: rotate(8deg);
+        z-index:-1;
+    }
+    
+}
+
+
+

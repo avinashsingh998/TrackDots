@@ -1,16 +1,16 @@
 export class ContactForm {
 
     name:string|undefined;
-    contactNo:string|undefined;
-    email:string|undefined;
+    contactNumber:string|undefined;
+    emailId:string|undefined;
     subject:string|undefined;
     description:string|undefined;
 
     constructor(name:string, contactNo:string, email:string, subject:string, description:string){
 
         this.name = name;
-        this.contactNo = contactNo;
-        this.email = email;
+        this.contactNumber = contactNo;
+        this.emailId = email;
         this.subject = subject;
         this.description = description;
         

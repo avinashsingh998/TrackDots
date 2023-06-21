@@ -3,6 +3,8 @@
   <br><br><br>
    <form (ngSubmit)="submit()" [formGroup]="loginForm">
     <h4 class="text-center text-warning">Admin Login</h4>
+
+    <p class="text-center text-danger" *ngIf="invalid">{{invalidReason}}</p>
     <div class="fg fg1">
       <label for="uname">Username <sup>*</sup></label>
       <input 
@@ -19,7 +21,7 @@
     <div class="fg fg2">
       <label for="password">Password <sup>*</sup></label>
       <input 
-      type="text" 
+      type="password" 
       formControlName = "password"
       placeholder="Enter Your user name"
       >
