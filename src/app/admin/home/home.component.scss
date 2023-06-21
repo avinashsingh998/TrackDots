@@ -1,0 +1,171 @@
+.main{
+
+
+    .loading{
+        position: absolute;
+        height: 20%;
+        max-height: 300px;
+        top:45%;
+        left: 45%;
+    }
+
+    .feedback{
+        background-image: url(../../../assets/img/bg-traveling.jpg);
+        background-size: contain;
+        background-attachment: fixed;
+
+        h2{
+          text-decoration: underline;
+          padding: 20px;
+          text-shadow: 0px 0px 3px black,0px 0px 5px black ;
+          color: rgb(211, 229, 255);
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            height: 550px;
+            flex-direction: column;
+            overflow-x: scroll;
+
+            @mixin dimension{
+                width: 300px;
+                height: 200px;
+            }
+
+            li{
+               @include dimension();
+                position: relative;
+
+                .bg{
+                    position: absolute;
+                    @include dimension();
+                    background-color: white;
+                    border:1px solid black;
+                    transform: rotateZ(7deg);
+
+                }
+                .details{
+                    position: absolute;
+                    @include dimension();
+                    padding: 8px;
+                    text-align: justify;
+                    // background-color: rgb(132, 255, 132);
+
+                    & >p{
+                        height: 75%;
+                        padding: 8px;
+                        padding-right: 20px;
+                        overflow-y: scroll;
+
+                        strong{
+                            color: green;
+                        }
+
+                        &::-webkit-scrollbar {
+                            background-color: #00000066;
+                            width: 5px;
+                          }
+                  
+                          &::-webkit-scrollbar-thumb {
+                           background-color: rgb(229, 229, 229);
+                            
+                            border-radius: 4px;
+                            color: black;
+                           
+                          }
+                    }
+
+                    .footer{
+                        display: flex;
+                        justify-content: space-between;
+                        span{
+                            font-style: italic;
+                            font-size: 12px;
+                        }
+    
+                        button{
+                            border:none;
+                            font-size: 12px;
+                            height: 20px;
+                            border-radius: .5rem;
+                            padding: auto 7px;
+                            color:red;
+
+                            &:hover{
+                                background-color: rgb(255, 22, 22);
+                                color: rgb(255, 255, 255);
+                            }
+                            &:active {
+                                background-color: rgb(255, 110, 110);
+                                color: rgb(0, 255, 4);
+                              }
+
+                            &:disabled{
+                                color: rgb(183, 183, 183);
+                            }
+                        }
+                    }
+                }
+
+                .done{
+                    background-color: rgb(222, 222, 222);
+                }
+
+                .notdone{
+                    background-color: rgb(177, 255, 167);
+                }
+
+
+
+
+            }
+        }
+        
+    }
+
+
+    .tickets{
+        
+        .ticket{
+            border:1px solid gray;
+            margin: 12px auto;
+            padding: 12px;
+            border-radius: .5rem;
+            max-width: 1000px;
+
+            .up{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .left{
+                    p{
+                        padding: 5px;
+                        margin: 0px;
+                    }
+                }
+                .right{
+                    color: gray;
+                }
+            }
+            .down{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-end;
+                input{
+                    margin: auto 12px;
+                    height: 30px;
+                }
+                button{
+                    height: 35px;
+                    font-size: 12px;
+                    font-weight: bold;
+                    margin: auto 12px;
+                }
+            }
+        }
+
+    }
+}

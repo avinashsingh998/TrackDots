@@ -1,6 +1,7 @@
 footer{
-    background-color: rgba(195, 195, 195, 0.701);
+    background-color: rgba(31, 31, 31, 0.97);
     padding: 12px;
+    color: white;
     
 }
 
@@ -28,7 +29,7 @@ footer{
                     font-family: Arial, Helvetica, sans-serif;
                     text-decoration: none;
                     font-size: 14px;
-                    color: rgb(0, 0, 195);
+                    color: rgb(141, 141, 255);
                 }
             }
         }
@@ -55,7 +56,7 @@ footer{
 
                 &:focus-visible{
                     outline: none;
-                    box-shadow: 0px 0px 6px 0px rgba(0, 106, 255, 0.847);
+                    box-shadow: 0px 0px 6px 0px rgba(234, 243, 255, 0.847);
                     border-color: rgba(255, 255, 255, 0);
                 }
             }

@@ -13,9 +13,9 @@ export class InternationalTripComponent implements OnInit {
   constructor(private serv:TourService) { }
 
   ngOnInit(): void {
-     this.serv.fetchData("other", false).then(dt => this.data= dt);
+     this.serv.fetchProducts("other", false).then(dt => this.data= dt);
 
-    console.log(this.data)
+    // console.log(this.data)
 
 
   }

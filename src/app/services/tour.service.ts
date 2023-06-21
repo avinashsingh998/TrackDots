@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import {environment} from 'src/environments/environment'
+
 
 @Injectable({
   providedIn: 'root'
@@ -8,25 +10,26 @@ export class TourService {
   spots!: any;
   filtered!: any;
   singleOnject!:any;
+  private apiUrl = environment.apiURL+'user/';
 
    async getObjectById(id:string): Promise<any> {
     // console.log(this.spots)
     if (!this.spots) {
-      const fetching = await this.http.get("../../assets/data/touristSpot.json").toPromise();
+      const fetching = await this.http.get(this.apiUrl+"packages").toPromise();
       this.spots = fetching;
       // console.log(this.spots);
     }
 
-    return  this.spots.find((spot: any) => spot.id == id);
+    return  this.spots.find((spot: any) => spot._id == id);
     
 
   }
 
-  async fetchData(country: string, heritagef: boolean): Promise<any> {
+  async fetchProducts(country: string, heritagef: boolean): Promise<any> {
     // console.log(country);
 
     if (!this.spots) {
-      const fetching = await this.http.get("../../assets/data/touristSpot.json").toPromise();
+      const fetching = await this.http.get(this.apiUrl+"packages").toPromise();
       this.spots = fetching;
       // console.log(this.spots);
     }

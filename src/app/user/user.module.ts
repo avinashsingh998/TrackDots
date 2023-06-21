@@ -18,6 +18,9 @@ import { AngularmaterialModule } from '../angularmaterial/angularmaterial.module
 import { FarenheitToCelPipe } from '../pipes/farenheit-to-cel.pipe';
 import { WeatherCardComponent } from '../utilityComponents/weather-card/weather-card.component';
 import { WeatherIconComponent } from '../utilityComponents/weather-icon/weather-icon.component';
+import { DomesticPackComponent } from './components/domestic-pack/domestic-pack.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
 // import { AgmCoreModule } from '@agm/core';
 
 
@@ -36,6 +39,9 @@ import { WeatherIconComponent } from '../utilityComponents/weather-icon/weather-
     WeatherIconComponent,
     WeatherCardComponent,
     FarenheitToCelPipe,
+    DomesticPackComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
 
 

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Product } from 'src/app/models/product';
+import { TourService } from 'src/app/services/tour.service';
 
 @Component({
   selector: 'app-products',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor() { }
+  public products!:Product[];
+
+  constructor(private _tourService : TourService) { }
 
   ngOnInit(): void {
+
+    this._tourService.fetchProducts('all', false).then((data)=>{
+      if(data) this.products = [...data];
+      
+    })
   }
 
 }

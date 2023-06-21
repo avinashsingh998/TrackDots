@@ -1,0 +1,78 @@
+<section class="main" id="home">
+
+    <div class="tickets">
+        <ng-container *ngIf="tickets[0] else secondticket">
+
+            <h2 class="text-center m-2 p-2">Tickets</h2>
+            <div class="ticket" *ngFor="let ticket of tickets">
+                <div class="up">
+                    <div class="left">
+                        <p><strong>Name</strong>:{{ticket.name}}</p>
+                        <p><strong>subject : </strong> {{ticket.subject}}</p>
+                        <a href="mailto:{{ticket.emailId}}" target = "_blank">{{ticket.emailId}}</a>
+                        <p class="tel">{{ticket.contactNumber}}</p>
+                    </div>
+                    <div class="right">
+                        <p class="description">
+                            {{ticket.description}}
+                        </p>
+                    </div>
+                </div>
+                <div class="down">
+                    <ng-container *ngIf="!ticket.closed else closed">
+                        <input type="text" name="comment" id="comment" [(ngModel)]="ticket.comment" [placeholder]="placeholder">
+                    </ng-container>
+                    <ng-template #closed>
+                        <p> {{ticket.comment}} </p>
+                    </ng-template>
+                    <button class="btn btn-danger" (click)="resolved(ticket)" [disabled]="ticket.closed"> {{ticket.closed?'Closed':'Close the ticket'}} </button>
+                </div>
+            </div>
+        </ng-container>
+        <ng-template #secondticket>
+            <h3 class="text-danger">There is no any tickets for you</h3>
+        </ng-template>
+    </div>
+
+
+
+    <ng-container *ngIf="!feedbacks else second">
+        <img src="../../../assets/img/icons/loading.jpg" alt="" class='loading'>
+    </ng-container>
+
+    <ng-template #second>
+        <ng-container *ngIf="!feedbacks[0] else third">
+            <h2 class="text-center text-danger">There is no feedbacks</h2>
+        </ng-container>
+
+        <ng-template #third>
+            <div class="feedback">
+                <h2 class="text-center">Feedback from users</h2>
+                <ul>
+                    <li *ngFor="let feedback of feedbacks" class='cards m-4 '>
+                        <div class="bg"></div>
+                        <div class="details" [ngClass]="feedback.read?'done':'notdone'">
+                            <p>
+                                <strong> {{feedback.subject}} - </strong>
+                                <span>
+                                    {{feedback.description}}
+                                </span>
+
+                            </p>
+                            <div class="footer">
+                                <span class="text-right text-itallic">~ {{feedback.name}} </span>
+
+                                <button [disabled]="feedback.read" (click)="markAsRead(feedback._id)">Mark as
+                                    read</button>
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </ng-template>
+    </ng-template>
+
+
+
+</section>

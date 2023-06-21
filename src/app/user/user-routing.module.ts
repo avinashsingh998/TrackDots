@@ -9,6 +9,7 @@ import { CartComponent } from './components/cart/cart.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { InternationalTripComponent } from './components/international-trip/international-trip.component';
+import { DomesticPackComponent } from './components/domestic-pack/domestic-pack.component';
 
 const routes: Routes = [
   {
@@ -39,10 +40,8 @@ const routes: Routes = [
       {
         path: 'package',
         children: [
-          {
-            path: 'international',
-            component: InternationalTripComponent,
-          },
+          {path: 'international', component: InternationalTripComponent},
+          {path:"domestic", component: DomesticPackComponent}
         ],
       },
     ],

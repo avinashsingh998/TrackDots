@@ -57,6 +57,7 @@ export class CartComponent implements OnInit {
 
       this.serv.getObjectById(this.id).then((dt) => {
         this.object = dt;
+        console.log("ljjkhgf",this.object)
         this.longitude = this.object.map_link.match(this.latLngPattern);
         this.latitude = this.object.map_link.match(this.lngPattern);
 

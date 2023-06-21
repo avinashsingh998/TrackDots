@@ -14,6 +14,7 @@ import { OrdersComponent } from './orders/orders.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     DashboardComponent,
     ProfileComponent,
     FooterComponent,
+    HomeComponent,
   ],
   imports: [
     CommonModule,

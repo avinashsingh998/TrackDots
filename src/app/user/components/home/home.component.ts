@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
   constructor(private _tourService: TourService, private router: Router) {}
 
   ngOnInit(): void {
-    this._tourService.fetchData('all', false).then((data) => {
+    this._tourService.fetchProducts('all', false).then((data) => {
       this.products = data;
       this.options = data;
     });
@@ -59,12 +59,12 @@ export class HomeComponent implements OnInit {
 
   searchTour() {
     if (this.object) {
-      this.router.navigate(['/cart'], { queryParams: { id: this.object.id } });
+      this.router.navigate(['/cart'], { queryParams: { id: this.object._id } });
       console.log('first if ');
     } else {
       if (this.options.length > 0 && this.search) {
         this.router.navigate(['/cart'], {
-          queryParams: { id: this.options[0].id },
+          queryParams: { id: this.options[0]._id },
         });
         console.log('second if ');
       } else {
@@ -80,8 +80,14 @@ export class HomeComponent implements OnInit {
     this.searchTour();
   }
 
-  updateOptions() {
-    // console.log("Updated")
+  async updateOptions() {
+    if(!this.products){
+      this._tourService.fetchProducts('all', false).then((data) => {
+        this.products = data;
+        this.options = data;
+      });
+  
+    }
 
     this.options = this.products.filter((obj: any) => {
       return obj.name.toLowerCase().includes(this.search?.toLowerCase() || '');
