@@ -11,6 +11,9 @@ export class WeatherService {
   constructor() { }
 
 
+
+  //For getting weather information suing coordinates for next 12 days
+  
   async getWeatherInfo(lat1:string, lon1:string){
     const url = 'https://yahoo-weather5.p.rapidapi.com/weather?lat='+lat1+'&long='+lon1+'&format=json&u=f';
     const options = {

@@ -5,10 +5,14 @@ import { Observable, Subject } from 'rxjs';
   providedIn: 'root'
 })
 export class CartService {
+  
+  
   addItem(arg0: { price: { food: number; basic: number; other: number; gst: number; othertax: number; }; pricetotal: number; package: any; date: any; maleCount: number; femaleCount: number; }) {
     this.bookings.push(arg0);
     this.cartLengthSubject.next(this.bookings.length)
   }
+
+  
   removeItem(ind: any) {
     this.bookings.splice(ind, 1);
     this.cartLengthSubject.next(this.bookings.length)
