@@ -1,0 +1,38 @@
+.main{
+
+    background-image: url(../../../../assets/img/bg-dark.webp);
+    background-attachment: fixed;
+    background-size: contain;
+    padding: 60px 12px;
+    background-color: rgba(106, 106, 106, 0.292);
+    background-blend-mode: color;
+
+    .loginForm{
+
+        max-width: 500px;
+        background-color: white;
+
+        h2{
+            font-family: cursive;
+            color: orangered;
+        }
+
+        .group1{
+            margin-top: 10px;
+            margin-bottom: 35px;
+
+            .invalid{
+                color: red;
+                font-size: 12px;
+                height: 0px;
+            }
+        }
+
+
+        .flexbox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+}

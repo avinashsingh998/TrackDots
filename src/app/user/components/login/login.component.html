@@ -1,1 +1,35 @@
-<p>login works!</p>
+
+
+<section class="main" id="userLogin">
+    <form class="col-lg-6 col-sm-8 border rounded border-dark p-5 mx-auto loginForm"
+        [formGroup]="loginUser" (ngSubmit)="submitForm(loginUser)"
+    >
+        <h2 class="text-center">User Login</h2>
+        <div class="form-group group1">
+            <label for="uname">User Name</label>
+            <input type="text" class="form-control" formControlName="uname">
+            <div class="invalid" *ngIf="loginUser.controls?.['uname']?.touched && loginUser.controls?.['uname']?.errors">
+                <ng-container  *ngIf="loginUser.controls?.['uname']?.errors?.['required'] else second">
+                    This field is required
+                </ng-container>
+                <ng-template #second>
+                    Minimum length is 4
+                </ng-template>
+            </div>
+        </div>
+
+        <div class="form-group group1">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" formControlName="password">
+            <div class="invalid" *ngIf="loginUser.controls?.['password']?.touched && loginUser.controls?.['password']?.errors">
+                This field is required
+            </div>
+        </div>
+
+        <div class="flexbox  group1">
+            <button type="submit" class = 'btn btn-primary' [disabled]="!loginUser.valid">Login</button>
+            <a href="register">New User? Register</a>
+        </div>
+
+    </form>
+</section>

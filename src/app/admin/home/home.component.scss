@@ -127,6 +127,19 @@
 
 
     .tickets{
+        background-image: url(../../../assets/img/bg-light-texture.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+
+        h2{
+            position: sticky;
+            top:0px;
+            text-decoration: underline;
+            background-color: gray;
+            margin: 0px;
+            padding: 20px;
+        }
         
         .ticket{
             border:1px solid gray;
@@ -134,6 +147,7 @@
             padding: 12px;
             border-radius: .5rem;
             max-width: 1000px;
+            background: white;
 
             .up{
                 display: flex;

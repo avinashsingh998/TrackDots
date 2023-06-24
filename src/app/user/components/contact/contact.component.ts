@@ -45,11 +45,11 @@ export class ContactComponent implements OnInit {
 
   submit() {
     this.formObject = new ContactForm(
-      this.contactForm.controls?.['name'].value,
-      this.contactForm.controls?.['contactNo'].value,
-      this.contactForm.controls?.['email'].value,
-      this.contactForm.controls?.['subject'].value,
-      this.contactForm.controls?.['description'].value
+      this.contactForm.value.name,
+      this.contactForm.value.contactNo,
+      this.contactForm.value.email,
+      this.contactForm.value.subject,
+      this.contactForm.value.description
     );
 
     this._userService

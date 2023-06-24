@@ -10,7 +10,7 @@
 
 
     .form1{
-        background-color: rgba(255, 248, 239, 0.863);
+        background-color: rgb(255, 255, 255);
         border-radius: 1.5rem;
         border:.5px solid rgb(255, 94, 0);
         box-shadow: 0px 0px 12px 2px rgb(0, 0, 0);
@@ -36,6 +36,12 @@
                 height: 0px;
             
             }
+        }
+
+        .flexbox{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 

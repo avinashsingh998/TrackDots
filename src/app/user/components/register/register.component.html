@@ -4,7 +4,7 @@
       class="needs-validation col-lg-6 col-md-10 mx-auto p-5 form1" novalidate>
       <h2 class="text-center">Registration Form</h2>
       <div class="mb-3">
-        <label for="name" class="form-label">Name Key@1234</label>
+        <label for="name" class="form-label">Name</label>
         <input type="text" class="form-control" id="name" formControlName="name" required>
         <div class="invalidInp"
           *ngIf="registrationForm.controls?.['name']?.touched && registrationForm.controls?.['name']?.errors ">
@@ -59,8 +59,10 @@
         </div>
       </div>
 
-      <button type="submit" class="btn btn-primary" [disabled]="!registrationForm.valid">Submit</button>
-
+      <div class="flexbox">
+        <button type="submit" class="btn btn-primary" [disabled]="!registrationForm.valid">Submit</button>
+        <a routerLink="../login">Already an User? Login</a>
+      </div>
     </form>
   </ng-container>
 
