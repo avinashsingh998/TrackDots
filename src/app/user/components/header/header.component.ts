@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { CookieService } from 'ngx-cookie-service';
+import { ActiveCredentialsService } from 'src/app/services/active-credentials.service';
 import { CartService } from 'src/app/services/cart.service';
 
 @Component({
@@ -10,7 +13,7 @@ export class HeaderComponent implements OnInit {
 
   itemCount!:number;
 
-  constructor(private _cartService : CartService) { }
+  constructor(private _cartService : CartService, public activeCred:ActiveCredentialsService, private _cookieService:CookieService, private router:Router) { }
 
   hidden = false;
 
@@ -56,6 +59,20 @@ export class HeaderComponent implements OnInit {
 
   toogleDD(){
     $(".custDD").slideToggle(400);
+  }
+
+
+  toogleUser(){
+
+      $("#dropdownAdmin").slideToggle()
+     
+  }
+
+  signOut(){
+    this.activeCred.user = undefined;
+  this._cookieService.delete('tokenJwt','/');
+  this._cookieService.delete('tokenJwt','/admin');
+  this.router.navigate(['login'])
   }
 
 

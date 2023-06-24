@@ -8,9 +8,13 @@ import {environment} from 'src/environments/environment'
 })
 export class TourService {
   spots!: any;
-  filtered!: any;
-  singleOnject!:any;
+  filtered!: any; //This variable is for storing filtered spots for displaying on frontend
   private apiUrl = environment.apiURL+'user/';
+
+
+
+  //Getting a single tourist spot using object Id
+
 
    async getObjectById(id:string): Promise<any> {
     // console.log(this.spots)
@@ -24,6 +28,9 @@ export class TourService {
     
 
   }
+
+
+  //Fetch all products from backend
 
   async fetchProducts(country: string, heritagef: boolean): Promise<any> {
     // console.log(country);

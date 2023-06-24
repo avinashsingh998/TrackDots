@@ -65,6 +65,7 @@ header{
 
         .dropdown{
             position: absolute;
+            z-index: +2;
             list-style: none;
             top:65px;
             padding-inline-start: 0px;

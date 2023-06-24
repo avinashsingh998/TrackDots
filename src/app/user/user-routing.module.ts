@@ -10,6 +10,9 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FeedbackComponent } from './components/feedback/feedback.component';
 import { InternationalTripComponent } from './components/international-trip/international-trip.component';
 import { DomesticPackComponent } from './components/domestic-pack/domestic-pack.component';
+import { RegisterComponent } from './components/register/register.component';
+import { LoginComponent } from './components/login/login.component';
+import { UserGaurdGuard } from '../gaurds/user-gaurd.guard';
 
 const routes: Routes = [
   {
@@ -19,8 +22,10 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
       { path: 'home', component: HomeComponent },
       { path: 'about', component: AboutComponent },
-      { path: 'contact', component: ContactComponent },
+      { path: 'contact', canActivate:[UserGaurdGuard], component: ContactComponent },
       { path: 'blogs', component: BlogsComponent },
+      { path:'register', component:RegisterComponent, data:{scrollPositionRestoration:'enabled'}},
+      { path:'login', component:LoginComponent, data:{scrollPositionRestoration:'enabled'}},
       {
         path: 'cart',
         component: CartComponent,
@@ -32,6 +37,7 @@ const routes: Routes = [
       {
         path: 'feedback',
         component: FeedbackComponent,
+        canActivate:[UserGaurdGuard],
         data: {
           scrollPositionRestoration: 'enabled',
         },

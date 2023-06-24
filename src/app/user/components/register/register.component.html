@@ -1,1 +1,86 @@
-<p>register works!</p>
+<section class="main" id="loginUser">
+  <ng-container *ngIf="!verifyOtp else verifyuser">
+    <form (ngSubmit)="registerUser(registrationForm)" [formGroup]="registrationForm"
+      class="needs-validation col-lg-6 col-md-10 mx-auto p-5 form1" novalidate>
+      <h2 class="text-center">Registration Form</h2>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" formControlName="name" required>
+        <div class="invalidInp"
+          *ngIf="registrationForm.controls?.['name']?.touched && registrationForm.controls?.['name']?.errors ">
+          Please enter a valid name.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" formControlName="email" required>
+        <div class="invalidInp"
+          *ngIf="registrationForm.controls?.['email']?.touched && registrationForm.controls?.['email']?.errors">
+          <ng-container *ngIf="registrationForm.controls?.['email']?.errors?.['pattern'] else elseEmail">
+            Please enter a valid email address.
+          </ng-container>
+          <ng-template #elseEmail>
+            This field is required
+          </ng-template>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" formControlName="password" required>
+        <div class="invalidInp"
+          *ngIf="registrationForm.controls?.['password']?.touched && registrationForm.controls?.['password']?.errors">
+          <ng-container *ngIf="registrationForm.controls?.['password']?.errors?.['maxlength'] else notMaxLength">
+            Max Length is 15.
+          </ng-container>
+          <ng-template #notMaxLength>
+            <ng-container *ngIf="registrationForm.controls?.['password']?.errors?.['minlength'] else notMinLength">
+              Min Lenght is 6.
+            </ng-container>
+            <ng-template #notMinLength>
+              <ng-container *ngIf="registrationForm.controls?.['password']?.errors?.['pattern'] else  nopattern">
+                Password should contain at least one uppercase, lowercase, numeric, and special character.
+              </ng-container>
+              <ng-template #nopattern>
+                This field is required
+              </ng-template>
+            </ng-template>
+          </ng-template>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="verifyPassword" class="form-label">Verify Password</label>
+        <input type="password" class="form-control" id="verifyPassword" formControlName="verifyPassword" required>
+        <div class="invalidInp"
+          *ngIf="registrationForm.controls?.['verifyPassword']?.touched && registrationForm.get('verifyPassword')?.hasError('passwordMismatch')">
+          Passwords mismatched...
+        </div>
+      </div>
+
+      <div class="flexbox">
+        <button type="submit" class="btn btn-primary" [disabled]="!registrationForm.valid">Submit</button>
+        <a routerLink="../login">Already an User? Login</a>
+      </div>
+    </form>
+  </ng-container>
+
+
+
+  <ng-template #verifyuser>
+    <form (ngSubmit)="verifyUser(otpValidator)" [formGroup]="otpValidator"
+      class="needs-validation col-lg-4 col-md-6 mx-auto p-5 form2" novalidate>
+        <label for="otp" class="form-label text-center">Enter OTP</label>
+        <input type="text" class="otp-validate" id="otp" formControlName="otp" required>
+        <div class="invalidInp"
+          *ngIf="otpValidator.controls?.['otp']?.touched && otpValidator.controls?.['otp']?.errors">
+          This field is required
+        </div>
+      
+
+      <button type="submit" class="btn btn-danger" [disabled]="!otpValidator.valid">Verify</button>
+
+      </form>
+  </ng-template>
+</section>

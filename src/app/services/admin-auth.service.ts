@@ -71,34 +71,7 @@ export class AdminAuthService {
       console.error('Error while fetching orders:', error);
     }
 
-    // return new Promise<any>((resolve, reject) => {
-    //   const options = {
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //     },
-    //     withCredentials: true,
-    //   };
   
-    //   try{
-    //     this.http.get(this.apiUrl + 'verify', options)
-    //     .subscribe(
-    //       (res: any) => {
-    //         console.log(res.user, "hgfd");
-    //         if (res.user) {
-    //           resolve(res.user);
-    //         } else {
-    //           reject("no such user found");
-    //         }
-    //       },
-    //       (error: any) => {
-    //         reject(error);
-    //       }
-    //     );
-    //   }
-    //   catch(err){
-    //     reject(err)
-    //   }
-    // });
   }
   
 }

@@ -34,7 +34,7 @@ import { TestDirectiveDirective } from './directives/test-directive.directive';
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
-    AngularmaterialModule
+    AngularmaterialModule,
     
 
   ],

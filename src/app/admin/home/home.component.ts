@@ -42,7 +42,11 @@ export class HomeComponent implements OnInit {
 
       this.adminService.getTickets().then((data:any)=>{
         this.tickets = [...data];
-        this.tickets.reverse();
+         this.tickets.reverse().sort((obj1, obj2)=>{
+          if(obj1.closed == obj2.closed) return 0;
+          else if (obj1.closed) return 1;
+          else return -1;
+        });
         console.log(this.tickets, "these are the tickets")
       }).catch(err=>{
         console.log(err)
@@ -60,6 +64,7 @@ export class HomeComponent implements OnInit {
           if (objec) {
             objec.read = true;
           }
+          
         }
       })
       .catch((err) => [console.log(err)]);
@@ -83,6 +88,11 @@ export class HomeComponent implements OnInit {
         if(ticketRef){
           ticketRef.closed = true;
           ticketRef.comment = ticket.comment;
+          this.tickets.sort((obj1, obj2)=>{
+            if(obj1.closed == obj2.closed) return 0;
+            else if (obj1.closed) return 1;
+            else return -1;
+          });
         }
 
       }
