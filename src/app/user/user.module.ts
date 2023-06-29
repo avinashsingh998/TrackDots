@@ -21,6 +21,8 @@ import { WeatherIconComponent } from '../utilityComponents/weather-icon/weather-
 import { DomesticPackComponent } from './components/domestic-pack/domestic-pack.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { ProfileComponent } from './components/profile/profile.component';
+
 // import { AgmCoreModule } from '@agm/core';
 
 
@@ -42,6 +44,7 @@ import { RegisterComponent } from './components/register/register.component';
     DomesticPackComponent,
     LoginComponent,
     RegisterComponent,
+    ProfileComponent
   ],
 
 

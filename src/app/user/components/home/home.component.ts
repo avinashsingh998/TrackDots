@@ -47,7 +47,7 @@ export class HomeComponent implements OnInit {
     const autoCompleteElement: any = document.getElementById('autoComplete1');
 
     inputElement?.addEventListener('focus', () => {
-      if (autoCompleteElement) autoCompleteElement.style.display = 'block';
+      if (autoCompleteElement && this.options && this.options.length>0) autoCompleteElement.style.display = 'block';
     });
     inputElement?.addEventListener('blur', () => {
       if (autoCompleteElement)
