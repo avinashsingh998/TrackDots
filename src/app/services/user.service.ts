@@ -145,7 +145,7 @@ export class UserService {
         this._activeCred.user = dt.user;
         this._activeCred.admin = undefined;
         this._cookiesService.set('tokenJwt', dt.token);
-        this.router.navigate(['/']);
+        this.router.navigate(['/'+this._activeCred.currentRoute]);
       });
     }
     return result;

@@ -32,6 +32,8 @@ export class UserGaurdGuard implements CanActivate {
       return true;
     } else {
       this._commonServices.loginFirstWarning()
+      if(route.routeConfig?.path) this._activeCred.currentRoute = route.routeConfig?.path
+      console.log(route.routeConfig?.path)
       this._router.navigate(['/login']);
       return false;
     }
