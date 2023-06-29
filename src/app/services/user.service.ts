@@ -155,7 +155,22 @@ export class UserService {
     const token = this._cookiesService.get('tokenJwt');
 
     if (token) {
-      const result = await fetch(this.apiUrl + 'verifyUser', {});
+      const result = await fetch(this.apiUrl + 'verifyUser', {
+        method:"GET",
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${token}`,
+        }
+
+      });
+      console.log(result)
+      if(result.ok){
+        result.json().then(user=>{
+          this._activeCred.user = {...user}
+          console.log(user, this._activeCred.user)
+
+        })
+      }
     }
   }
 }

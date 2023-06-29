@@ -42,6 +42,7 @@ export class HeaderComponent implements OnInit {
         setTimeout(()=>$(".custDD").slideUp(400),50)
         // console.log("called")
       }
+      
 
 
     });
@@ -69,7 +70,7 @@ export class HeaderComponent implements OnInit {
   }
 
   signOut(){
-    this.activeCred.user = undefined;
+    this.activeCred.user=undefined;
   this._cookieService.delete('tokenJwt','/');
   this._cookieService.delete('tokenJwt','/admin');
   this.router.navigate(['login'])

@@ -1,7 +1,7 @@
 <section class="main" id="home">
 
     <div class="tickets">
-        <ng-container *ngIf="tickets[0] else secondticket">
+        <ng-container *ngIf="tickets && tickets[0] else secondticket">
 
             <h2 class="text-center ">Tickets</h2>
             <div class="ticket" *ngFor="let ticket of tickets">

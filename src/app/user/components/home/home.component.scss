@@ -6,6 +6,7 @@
     align-items: center;
 }
 
+
 .main{
     &>.top{
         @include flexbox();
@@ -134,7 +135,6 @@
 
 
     .carousel-item {
-
         img{
             max-height: 500px;
         }
@@ -192,6 +192,7 @@
             }
             
             
+            
 
             img{
                 height: 100%;
@@ -202,20 +203,6 @@
                 transform-origin: bottom;
                 transition: all .3s;
 
-                &:first-child{
-                    // transform: rotateZ(8deg);
-                    // z-index: -2;
-
-                }
-                &:nth-child(2){
-                    // transform: rotateZ(-8deg);
-                    // z-index:-1;
-
-                }
-                &:nth-child(3){
-                    // z-index: 0;
-
-                }
                 
             }
 

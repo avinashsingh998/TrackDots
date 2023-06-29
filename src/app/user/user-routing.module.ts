@@ -13,6 +13,8 @@ import { DomesticPackComponent } from './components/domestic-pack/domestic-pack.
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { UserGaurdGuard } from '../gaurds/user-gaurd.guard';
+import { ProfileComponent } from './components/profile/profile.component';
+
 
 const routes: Routes = [
   {
@@ -29,7 +31,7 @@ const routes: Routes = [
       {
         path: 'cart',
         component: CartComponent,
-        canActivate: [AuthGuard],
+        canActivate: [AuthGuard, UserGaurdGuard],
         data: {
           scrollPositionRestoration: 'enabled',
         },
@@ -50,6 +52,8 @@ const routes: Routes = [
           {path:"domestic", component: DomesticPackComponent}
         ],
       },
+
+      {path:"profile", component:ProfileComponent, canActivate:[UserGaurdGuard]}
     ],
   },
 ];

@@ -39,16 +39,16 @@
                         </li>
                     </ng-container>
                     <ng-template #second>
-                        <div class="dropdown-parent" *ngIf="activeCred?.user">
+                        <div class="dropdown-parent" id = "userProfileIcon" *ngIf="activeCred?.user">
                             <div (click)="toogleUser()" class = "dropdown-key">
                               <img
-                                [src]="activeCred.user.imageUrl?'data:image/jpeg;base64,'+activeCred.admin.imageUrl:'../../../../assets/img/icons/noProfileImage.jpg'"
+                                [src]="activeCred.user?.imageUrl?'data:image/jpeg;base64,'+activeCred.user?.imageUrl:'../../../../assets/img/icons/noProfileImage.jpg'"
                                 alt="mdo" width="42" height="42" class="rounded-circle">
-                              <p class=" m-0 admin-name"> {{activeCred.user.name}} </p>
+                              <p class=" m-0 admin-name"> {{activeCred.user?.name}} </p>
                             </div>
                             <ul class="dropdown" id = "dropdownAdmin">
-                              <li><a class="dropdown-item" routerLink='/admin'>Settings</a></li>
-                              <li><a class="dropdown-item" routerLink='/admin'>Profile</a></li>
+                              <li><a class="dropdown-item" routerLink='/'>Settings</a></li>
+                              <li><a class="dropdown-item" routerLink='/profile'>Profile</a></li>
                               <hr>
                               <li><a class="dropdown-item" (click)="signOut()">Sign out</a></li>
                             </ul>

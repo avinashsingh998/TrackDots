@@ -49,9 +49,9 @@
       <div class="dropdown-parent" *ngIf="activeCred?.admin">
         <div (click)="toogleDD()" class = "dropdown-key">
           <img
-            [src]="activeCred.admin.imageUrl?'data:image/jpeg;base64,'+activeCred.admin.imageUrl:'../../../assets/img/icons/noProfileImage.jpg'"
+            [src]="activeCred.admin?.imageUrl?'data:image/jpeg;base64,'+activeCred.admin?.imageUrl:'../../../assets/img/icons/noProfileImage.jpg'"
             alt="mdo" width="42" height="42" class="rounded-circle">
-          <p class="text-light m-0 admin-name"> {{activeCred.admin.name}} </p>
+          <p class="text-light m-0 admin-name"> {{activeCred.admin?.name}} </p>
         </div>
         <ul class="dropdown" id = "dropdownAdmin">
           <li><a class="dropdown-item" routerLink='/admin'>Settings</a></li>
